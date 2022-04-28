@@ -87,7 +87,8 @@
         </style>
 
         <div class="cards" style="margin-top: 4em">
-            {% for reg in site.data.algoritmeregisters %}
+            {% assign regs = site.data.algoritmeregisters | sort: 'title' %}
+            {% for reg in regs %}
             <div class="card">
               <p style="margin-bottom: 0">{{ reg.organisation }}</p>
               <h2>{{ reg.title }}&emsp;<span class="type">{{ reg.type }}</span></h2>

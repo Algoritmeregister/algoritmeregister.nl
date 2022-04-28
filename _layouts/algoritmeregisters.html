@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="//www.algoritmeregister.org/css/main.css" />
+    <link rel="mask-icon" href="//www.algoritmeregister.org/img/algoritmeregister-logo-sans-text.svg" color="#ffffff">
+    <link rel="icon" href="//www.algoritmeregister.org/img/algoritmeregister-logo-sans-text.svg">
+    <link rel="apple-touch-icon" href="//www.algoritmeregister.org/img/algoritmeregister-logo-sans-text.svg">
+    <title>{{ site.title }}</title>
+    <style>
+      th,
+      td {
+        text-align: left;
+        vertical-align: top;
+      }
+      table {
+        border: 0;
+        border-collapse: collapse;
+      }
+      .nowrap {
+        white-space: nowrap;
+      }
+    </style>
+    <link rel="canonical" href="https://www.algoritmeregister.nl/" />
+  </head>
+  <body>
+    <header class="bg-light-blue flex space-between p4">
+      <a href="/" class="flex">
+        <img
+          src="//www.algoritmeregister.org/img/algoritmeregister-logo.svg"
+          class="w-main-logo"
+        />
+      </a>
+      <nav class="flex align-center">
+        <a href="/" class="text-nav mr4">home</a>
+        <a href="https://www.algoritmeregister.org" class="text-nav mr4"
+          >meer informatie</a
+        >
+        <a href="https://www.github.com/Algoritmeregister">
+          <img
+            src="//www.algoritmeregister.org/img/github-repo-link.svg"
+            class="display-block"
+          />
+        </a>
+      </nav>
+    </header>
+
+    <div class="bg-light-blue">
+      <div class="w-max-wrapper mx-auto flex">
+        <!-- <div class="flex-1">
+          <img src="/files/hoofdpagina/2022/03/demodam.png" />
+        </div> -->
+        <div class="flex-1">
+          <h1 class="text-h1 mb3">{{ site.title }}</h1>
+          <div class="md-zone">
+            <p>
+              {{ site.description }}
+            </p>
+            <p>
+                Algoritmeregister aanmelden? Stuur een e-mail naar <a href="mailto:info@algoritmeregister.nl">info@algoritmeregister.nl</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-max-wrapper mx-auto flex">
+      <div class="md-zone">
+
+        <style>
+            .cards {
+            }
+            .card {
+                padding: 1em;
+                margin: 1em;
+                border-bottom: 2px solid #AAA;
+            }
+            .type {
+                background: #CCC;
+                display: inline-block;
+                border-radius: 1em;
+                padding: 0.1em 0.5em;
+                font-size: 1rem;
+            }
+        </style>
+
+        <div class="cards" style="margin-top: 4em">
+            {% for reg in site.data.algoritmeregisters %}
+            <div class="card">
+              <p style="margin-bottom: 0">{{ reg.organisation }}</p>
+              <h2>{{ reg.title }}&emsp;<span class="type">{{ reg.type }}</span></h2>
+              <p>{{ reg.description }}</[]>
+              <p>
+                  <a target="_blank" href="{{ reg.url }}">{{ reg.url }}&nbsp;<img style="vertical-align: baseline;" src="/img/external-link.svg"></a>
+              </p>
+            </div>
+            {% endfor %}
+        </div>
+
+      </div>
+    </div>
+
+    <footer>
+      <div class="w-max-wrapper mx-auto flex">
+        <p class="text-h4 my2 px2">&copy; 2022 - Algoritmeregister</p>
+      </div>
+    </footer>
+  </body>
+</html>

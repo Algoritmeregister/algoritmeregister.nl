@@ -1,25 +1,25 @@
 - title: Algoritmeregister Den Haag
   organisation: Gemeente Den Haag
-  description: De Gemeente Den Haag publiceert zijn algoritmes op basis van de standaard door middel van het publiceren van een .csv bestand op data.overheid.nl. Voor het invullen en bijwerken van deze informatie wordt gebruik gemaakt van Excel.
+  description: Het algoritmeregister is een overzicht van algoritmes die de gemeente Den Haag gebruikt bij haar gemeentelijke dienstverlening. De gemeente wil transparant zijn over het gebruik van algoritmes en kunnen uitleggen hoe een besluit tot stand is gekomen.
   type: databestand
   url: https://data.overheid.nl/en/dataset/algoritme-register
   status: in gebruik
 - title: Algoritmeregister Rotterdam
   organisation: Gemeente Rotterdam
-  description: De Gemeente Rotterdam publiceert zijn algoritmes op de gemeentelijke website, als lopende tekst in het eigen CMS. Momenteel wordt er gewerkt aan een beheertool op basis van Mendix. Het "interne" deel van deze tool wordt momenteel afgerond. Het "publieksdeel" zal naar verwachting over enkele weken worden opgeleverd.
+  description: Welkom op het algoritmeregister. Via deze pagina geeft gemeente Rotterdam u inzicht in algoritmes die de gemeente gebruikt bij het efficiënt uitvoeren van haar werkzaamheden.
   type: website
   url: https://www.rotterdam.nl/algoritmeregister
   status: in gebruik
 - title: Algoritmeregister Amsterdam
   organisation: Gemeente Amsterdam
-  description: De Gemeente Amsterdam heeft als een van de koplopers in samenwerking met Helsinki opdracht gegeven aan de Finse startup Saidor om een algoritmeregister te realiseren. Deze zal naar alle waarschijnlijkheid op korte termijn worden aangepast om aan te sluiten op de nieuwe standaard.
+  description: Het algoritmeregister is een overzicht van de algoritmes die de gemeente Amsterdam gebruikt bij gemeentelijke dienstverlening.
   type: website
   tool: saidot.ai
   url: https://algoritmeregister.amsterdam.nl
   status: in gebruik
 - title: Algoritmeregister Utrecht
   organisation: Gemeente Utrecht
-  description: Dit is het Utrechtse algoritmeregister. Hier vindt u een overzicht van de Utrechtse digitaliseringstrajecten waarbij een algoritme en/of voorspellend model een rol vervult. We zijn uitgegaan van grote algoritmen en/of voorspellende modellen die impact hebben op de stad. We hebben de 'kleine' algoritmen bewust achterwege gelaten in dit overzicht, gelet op de omvang en eventuele beheersbaarheid.
+  description: Dit is het Utrechtse algoritmeregister. Hier vindt u een overzicht van de Utrechtse digitaliseringstrajecten waarbij een algoritme en/of voorspellend model een rol vervult.
   type: databestand
   tool: data.overheid.nl
   url: https://data.overheid.nl/en/dataset/utrecht-algoritmeregister-utrecht

@@ -21,7 +21,7 @@
 title: Overzicht van algoritmeregisters
 email: info@algoritmeregister.org
 description: >- # this means to ignore newlines until "baseurl:"
-  Nederlandse overheden houden de inzet van algoritmische toepassingen bij in een algoritmeregister. Op deze pagina vind je een overzicht van alle bekende algoritmeregisters van Nederlandse (semi-)publieke organisaties.
+  Nederlandse overheden houden de inzet van algoritmische toepassingen bij in hun algoritmeregister. Op deze pagina vind je een overzicht van alle bekende algoritmeregisters van Nederlandse (semi-)publieke organisaties.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: nl_algoreg

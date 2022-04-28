@@ -25,26 +25,7 @@
     <link rel="canonical" href="https://www.algoritmeregister.nl/" />
   </head>
   <body>
-    <header class="bg-light-blue flex space-between p4">
-      <a href="/" class="flex">
-        <img
-          src="//www.algoritmeregister.org/img/algoritmeregister-logo.svg"
-          class="w-main-logo"
-        />
-      </a>
-      <nav class="flex align-center">
-        <a href="/" class="text-nav mr4">home</a>
-        <a href="https://www.algoritmeregister.org" class="text-nav mr4"
-          >meer informatie</a
-        >
-        <a href="https://www.github.com/Algoritmeregister">
-          <img
-            src="//www.algoritmeregister.org/img/github-repo-link.svg"
-            class="display-block"
-          />
-        </a>
-      </nav>
-    </header>
+    {% include header.html %}
 
     <div class="bg-light-blue">
       <div class="w-max-wrapper mx-auto flex">
@@ -80,9 +61,9 @@
             .type {
                 background: #CCC;
                 display: inline-block;
+                font-size: 0.85rem;
                 border-radius: 1em;
                 padding: 0.1em 0.5em;
-                font-size: 1rem;
             }
         </style>
 

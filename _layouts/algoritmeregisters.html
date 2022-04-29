@@ -6,9 +6,9 @@
   <body>
     {% include header.html %}
 
-    <div class="bg-light-blue" role="heading">
+    <div class="bg-light-blue">
       <div class="w-max-wrapper mx-auto flex">
-        <div class="flex-1">
+        <div class="flex-1" role="heading">
           <h1 class="text-h1 mb3">{{ site.title }}</h1>
           <div class="md-zone">
             <p>{{ site.description }}</p>
@@ -21,95 +21,20 @@
           </div>
         </div>
       </div>
+
+      <div class="w-max-wrapper mx-auto flex">
+        <div class="switch" role="navigation">
+          <nav>
+            <a class="tab-link {% if page.path == "index.md" %}active{% endif %}" href="/">Algoritmeregisters</a>
+            <a class="tab-link {% if page.path == "algoritmes.md" %}active{% endif %}" href="/algoritmes">Nationale catalogus</a>
+          </nav>
+        </div>
+      </div>
     </div>
 
-    <div class="w-max-wrapper mx-auto" role="main">
-      <div class="md-zone">
-        <style>
-          .cards {
-          }
-          .card {
-            padding: 1em;
-            margin-bottom: 1em;
-            border-bottom: 1px solid #ccc;
-            background: #f4faff;
-          }
-          .type {
-            background: #ccc;
-            display: inline-block;
-            font-size: 0.85rem;
-            border-radius: 1em;
-            padding: 0.1em 0.5em;
-          }
-          .search {
-            padding: 1em;
-            margin-top: 2em;
-          }
-          .search input,
-          .search select {
-            font-size: 1em;
-            padding: 0.5em;
-          }
-        </style>
-
-        <div class="search">
-          <p>Filter op naam:&emsp;<input type="text" placeholder="Voer zoektekst in" id="filter-title-input"></p>
-          <script>
-            let filterTitleInput = document.getElementById("filter-title-input");
-            filterTitleInput.onkeyup = function (event) {
-              document.getElementById("filter-status-select").selectedIndex = 0; //reset other filter
-              let str = event.target.value;
-              Array.prototype.forEach.call(document.getElementsByClassName("card"), function (el) {
-                el.style.display = el.dataset.filterTitle.toLowerCase().includes(str.toLowerCase()) ?
-                  "block" :
-                  "none";
-              });
-            }
-          </script>
-          <p>Filter op status:&emsp;<select id="filter-status-select"><option></option><option>in gebruik</option><option>in ontwikkeling</option></select></p>
-          <script>
-            let filterStatusSelect = document.getElementById("filter-status-select");
-            filterStatusSelect.onchange = function (event) {
-              document.getElementById("filter-title-input").value = ''; //reset other filter
-              let str = event.target.value;
-              Array.prototype.forEach.call(document.getElementsByClassName("card"), function (el) {
-                el.style.display = el.dataset.filterStatus.toLowerCase().includes(str.toLowerCase()) ?
-                  "block" :
-                  "none";
-              });
-            }
-          </script>
-        </div>
-
-        <div class="cards">
-          {% assign regs = site.data.algoritmeregisters | sort: 'title' %}
-          {% for reg in regs %}
-          <div class="card" data-filter-title="{{reg.title}}" data-filter-status="{{reg.status}}">
-            <div style="float:right">
-              <p style="font-size:0.85em">{{ reg.status }}</p>
-            </div>
-            <p style="margin-bottom: 0">{{ reg.organisation }}</p>
-            <h2>
-              {{ reg.title }}&emsp;<span class="type">{{ reg.type }}</span>
-            </h2>
-            {% if reg.description %}
-            <p style="font-style: italic; color: #777">
-              "{{ reg.description }}"
-            </p>
-            {% endif %}
-            {% if reg.url %}
-            <p>
-              <a target="_blank" href="{{ reg.url }}"
-                >{{ reg.url }}&nbsp;<img
-                  style="vertical-align: baseline"
-                  src="/img/external-link.svg"
-                  alt="externe link indicator"
-              /></a>
-            </p>
-            {% endif %}
-          </div>
-          {% endfor %}
-        </div>
+    <div class="w-max-wrapper mx-auto" style="margin-top: 2rem">
+      <div class="md-zone" role="main">
+        {{ content }}
       </div>
     </div>
 

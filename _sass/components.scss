@@ -1,0 +1,33 @@
+.cards {
+}
+.card {
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #ccc;
+  background: #f4faff;
+}
+.type {
+  background: #ccc;
+  display: inline-block;
+  font-size: 0.85rem;
+  border-radius: 1em;
+  padding: 0.1em 0.5em;
+}
+.search {
+  padding: 1em;
+  margin-top: 2em;
+}
+.search input,
+.search select {
+  font-size: 1em;
+  padding: 0.5em;
+}
+.tab-link {
+  font-family: "Noto Sans", sans-serif;
+  padding: 1em;
+  display: inline-block;
+  border-radius: 0.5em 0.5em 0 0;
+}
+.tab-link.active {
+  background: white;
+}

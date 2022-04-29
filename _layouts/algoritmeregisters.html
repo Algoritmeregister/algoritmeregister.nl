@@ -1,28 +1,7 @@
 <!DOCTYPE html>
 <html lang="nl">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="//www.algoritmeregister.org/css/main.css" />
-    <link rel="mask-icon" href="//www.algoritmeregister.org/img/algoritmeregister-logo-sans-text.svg" color="#ffffff">
-    <link rel="icon" href="//www.algoritmeregister.org/img/algoritmeregister-logo-sans-text.svg">
-    <link rel="apple-touch-icon" href="//www.algoritmeregister.org/img/algoritmeregister-logo-sans-text.svg">
-    <title>{{ site.title }}</title>
-    <style>
-      th,
-      td {
-        text-align: left;
-        vertical-align: top;
-      }
-      table {
-        border: 0;
-        border-collapse: collapse;
-      }
-      .nowrap {
-        white-space: nowrap;
-      }
-    </style>
-    <link rel="canonical" href="https://www.algoritmeregister.nl/" />
+    {% include meta.html %}
   </head>
   <body>
     {% include header.html %}
@@ -35,11 +14,12 @@
         <div class="flex-1">
           <h1 class="text-h1 mb3">{{ site.title }}</h1>
           <div class="md-zone">
+            <p>{{ site.description }}</p>
             <p>
-              {{ site.description }}
-            </p>
-            <p>
-                Algoritmeregister aanmelden? Stuur een e-mail naar <a href="mailto:info@algoritmeregister.org">info@algoritmeregister.org</a>
+              Algoritmeregister aanmelden? Stuur een e-mail naar
+              <a href="mailto:info@algoritmeregister.org"
+                >info@algoritmeregister.org</a
+              >
             </p>
           </div>
         </div>
@@ -48,46 +28,71 @@
 
     <div class="w-max-wrapper mx-auto flex">
       <div class="md-zone">
-
         <style>
-            .cards {
-            }
-            .card {
-                padding: 1em;
-                margin-bottom: 1em;
-                border-bottom: 1px solid #CCC;
-                background: #F4FAFF;
-            }
-            .type {
-                background: #CCC;
-                display: inline-block;
-                font-size: 0.85rem;
-                border-radius: 1em;
-                padding: 0.1em 0.5em;
-            }
+          .cards {
+          }
+          .card {
+            padding: 1em;
+            margin-bottom: 1em;
+            border-bottom: 1px solid #ccc;
+            background: #f4faff;
+          }
+          .type {
+            background: #ccc;
+            display: inline-block;
+            font-size: 0.85rem;
+            border-radius: 1em;
+            padding: 0.1em 0.5em;
+          }
+          .search {
+            padding: 1em;
+            margin-top: 2em;
+          }
+          .search input {
+            font-size: 1em;
+            padding: 0.5em;
+          }
         </style>
 
-        <div class="cards" style="margin-top: 4em">
-            {% assign regs = site.data.algoritmeregisters | sort: 'title' %}
-            {% for reg in regs %}
-            <div class="card">
-              <p style="margin-bottom: 0">{{ reg.organisation }}</p>
-              <h2>{{ reg.title }}&emsp;<span class="type">{{ reg.type }}</span></h2>
-              <p style="font-style: italic; color: #777">"{{ reg.description }}"</p>
-              <p>
-                  <a target="_blank" href="{{ reg.url }}">{{ reg.url }}&nbsp;<img style="vertical-align: baseline;" src="/img/external-link.svg"></a>
-              </p>
-            </div>
-            {% endfor %}
+        <div class="search">
+          <p>Filter op naam:&emsp;<input type="text" placeholder="Voer zoektekst in" id="filter-input"></p>
+          <script>
+            let filterInput = document.getElementById("filter-input");
+            filterInput.onkeyup = function (event) {
+              let str = event.target.value;
+              Array.prototype.forEach.call(document.getElementsByClassName("card"), function (el) {
+                el.style.display = el.dataset.filter.toLowerCase().includes(str.toLowerCase()) ?
+                  "block" :
+                  "none";
+              });
+            }
+          </script>
         </div>
 
+        <div class="cards">
+          {% assign regs = site.data.algoritmeregisters | sort: 'title' %} {%
+          for reg in regs %}
+          <div class="card" data-filter="{{reg.title}}">
+            <p style="margin-bottom: 0">{{ reg.organisation }}</p>
+            <h2>
+              {{ reg.title }}&emsp;<span class="type">{{ reg.type }}</span>
+            </h2>
+            <p style="font-style: italic; color: #777">
+              "{{ reg.description }}"
+            </p>
+            <p>
+              <a target="_blank" href="{{ reg.url }}"
+                >{{ reg.url }}&nbsp;<img
+                  style="vertical-align: baseline"
+                  src="/img/external-link.svg"
+              /></a>
+            </p>
+          </div>
+          {% endfor %}
+        </div>
       </div>
     </div>
 
-    <footer>
-      <div class="w-max-wrapper mx-auto flex">
-        <p class="text-h4 my2 px2">&copy; 2022 - Algoritmeregister</p>
-      </div>
-    </footer>
+    {% include footer.html %}
   </body>
 </html>

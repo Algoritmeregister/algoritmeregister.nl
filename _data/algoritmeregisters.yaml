@@ -2,14 +2,23 @@
   organisation: Gemeente Den Haag
   description: Het algoritmeregister is een overzicht van algoritmes die de gemeente Den Haag gebruikt bij haar gemeentelijke dienstverlening. De gemeente wil transparant zijn over het gebruik van algoritmes en kunnen uitleggen hoe een besluit tot stand is gekomen.
   type: databestand
+  tool: spreadsheet
   url: https://data.overheid.nl/en/dataset/algoritme-register
   status: in gebruik
 - title: Algoritmeregister Rotterdam
   organisation: Gemeente Rotterdam
   description: Welkom op het algoritmeregister. Via deze pagina geeft gemeente Rotterdam u inzicht in algoritmes die de gemeente gebruikt bij het efficiënt uitvoeren van haar werkzaamheden.
   type: website
+  tool: 
   url: https://www.rotterdam.nl/algoritmeregister
   status: in gebruik
+- title: Algoritmeregister Rotterdam
+  organisation: Gemeente Rotterdam
+  description: 
+  type: website
+  tool: Mendix
+  url: 
+  status: in ontwikkeling
 - title: Algoritmeregister Amsterdam
   organisation: Gemeente Amsterdam
   description: Het algoritmeregister is een overzicht van de algoritmes die de gemeente Amsterdam gebruikt bij gemeentelijke dienstverlening.
@@ -21,6 +30,20 @@
   organisation: Gemeente Utrecht
   description: Dit is het Utrechtse algoritmeregister. Hier vindt u een overzicht van de Utrechtse digitaliseringstrajecten waarbij een algoritme en/of voorspellend model een rol vervult.
   type: databestand
-  tool: data.overheid.nl
+  tool: spreadsheet
   url: https://data.overheid.nl/en/dataset/utrecht-algoritmeregister-utrecht
   status: in gebruik
+- title: Algoritmeregister Noord-Brabant
+  organisation: Provincie Noord-Brabant
+  description: 
+  type: databestand
+  tool: spreadsheet
+  url: 
+  status: in ontwikkeling
+- title: Algoritmeregister Zuid-Holland
+  organisation: Provincie Zuid-Holland
+  description: 
+  type: databestand
+  tool: spreadsheet
+  url: 
+  status: in ontwikkeling

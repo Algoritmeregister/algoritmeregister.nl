@@ -6,11 +6,8 @@
   <body>
     {% include header.html %}
 
-    <div class="bg-light-blue">
+    <div class="bg-light-blue" role="heading">
       <div class="w-max-wrapper mx-auto flex">
-        <!-- <div class="flex-1">
-          <img src="/files/hoofdpagina/2022/03/demodam.png" />
-        </div> -->
         <div class="flex-1">
           <h1 class="text-h1 mb3">{{ site.title }}</h1>
           <div class="md-zone">
@@ -26,7 +23,7 @@
       </div>
     </div>
 
-    <div class="w-max-wrapper mx-auto">
+    <div class="w-max-wrapper mx-auto" role="main">
       <div class="md-zone">
         <style>
           .cards {
@@ -106,6 +103,7 @@
                 >{{ reg.url }}&nbsp;<img
                   style="vertical-align: baseline"
                   src="/img/external-link.svg"
+                  alt="externe link indicator"
               /></a>
             </p>
             {% endif %}

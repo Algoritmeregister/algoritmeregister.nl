@@ -1,0 +1,26 @@
+<div class="bg-light-blue">
+    <div class="w-max-wrapper mx-auto flex">
+      <div class="flex-1" role="heading">
+        <h1 class="text-h1 mb3">{{ site.title }}</h1>
+        <div class="md-zone">
+          <p>{{ site.description }}</p>
+          <p>
+            Algoritmeregister aanmelden? Stuur een e-mail naar
+            <a href="mailto:info@algoritmeregister.org"
+              >info@algoritmeregister.org</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-max-wrapper mx-auto flex">
+      <div class="switch" role="navigation">
+        <nav>
+          <a class="tab-link {% if page.path == "index.md" %}active{% endif %}" href="/">Algoritmeregisters</a>
+          <a class="tab-link {% if page.path == "algoritmes.md" %}active{% endif %}" href="/algoritmes">Nationale catalogus</a>
+          <!-- <a class="tab-link {% if page.path == "beginnen.md" %}active{% endif %}" href="/beginnen">Beginnen met een algoritmeregister</a> -->
+        </nav>
+      </div>
+    </div>
+  </div>

@@ -2,14 +2,14 @@
 layout: algoritmeregisters
 ---
 <div class="search">
-    <p>Filter op naam:&emsp;<input type="text" placeholder="Voer zoektekst in" id="filter-title-input"></p>
+    <p>Filter op naam:&emsp;<input type="text" placeholder="Voer zoektekst in" id="filter-general-input"></p>
     <script>
-    let filterTitleInput = document.getElementById("filter-title-input");
-    filterTitleInput.onkeyup = function (event) {
+    let filterGeneralInput = document.getElementById("filter-general-input");
+    filterGeneralInput.oninput = function (event) {
         document.getElementById("filter-status-select").selectedIndex = 0; //reset other filter
         let str = event.target.value;
         Array.prototype.forEach.call(document.getElementsByClassName("card"), function (el) {
-        el.style.display = el.dataset.filterTitle.toLowerCase().includes(str.toLowerCase()) ?
+        el.style.display = el.dataset.filterGeneral.toLowerCase().includes(str.toLowerCase()) ?
             "block" :
             "none";
         });
@@ -19,7 +19,7 @@ layout: algoritmeregisters
     <script>
     let filterStatusSelect = document.getElementById("filter-status-select");
     filterStatusSelect.onchange = function (event) {
-        document.getElementById("filter-title-input").value = ''; //reset other filter
+        document.getElementById("filter-general-input").value = ''; //reset other filter
         let str = event.target.value;
         Array.prototype.forEach.call(document.getElementsByClassName("card"), function (el) {
         el.style.display = el.dataset.filterStatus.toLowerCase().includes(str.toLowerCase()) ?
@@ -33,7 +33,7 @@ layout: algoritmeregisters
 <div class="cards">
     {% assign regs = site.data.algoritmeregisters | sort: 'title' %}
     {% for reg in regs %}
-    <div class="card" data-filter-title="{{reg.title}}" data-filter-status="{{reg.status}}">
+    <div class="card" data-filter-general="{{reg.title}} {{reg.organisation}}" data-filter-status="{{reg.status}}">
     <div style="float:right">
         <p style="font-size:0.85em">{{ reg.status }}</p>
     </div>

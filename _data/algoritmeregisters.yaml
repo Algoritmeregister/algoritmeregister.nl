@@ -49,10 +49,10 @@
   status: in ontwikkeling
 - title: Algoritmeregister RvIG
   organisation: Rijksdienst voor Identiteitsgegevens
-  description: 
-  type:
-  tool:
-  url: 
+  description: RvIG beheert de Basisregistratie Personen (BRP), het stelsel van reisdocumenten, de persoonsgegevens van personen in Caribisch Nederland, het Basisregister Reisdocumenten, het Verificatieregister. Bij verschillende onderdelen van de dienstverlening die RvIG biedt wordt gebruik gemaakt van algoritmes.
+  type: website
+  tool: 
+  url: https://www.rvig.nl/over-rvig/algoritmeregister
   status: in ontwikkeling
 - title: Algoritmeregister Noord-Holland
   organisation: Provincie Noord-Holland

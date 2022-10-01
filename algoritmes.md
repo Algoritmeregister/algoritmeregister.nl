@@ -23,3 +23,5 @@ layout: algoritmeregisters
         </p>
     </div>
 </div>
+
+{% include algoritmes.html %}

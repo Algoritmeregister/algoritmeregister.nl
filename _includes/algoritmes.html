@@ -1,0 +1,90 @@
+<style>
+    .filter-bar {
+        text-align: right;
+    }
+    table {
+        width: 100%;
+        border: 0;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+    }
+    select {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1em;
+    }
+    tr {
+        vertical-align: middle;
+    }
+    th {
+        color: #4D80E2;
+        text-transform: uppercase;
+        padding: 1.1em 0;
+    }
+    td {
+        padding: 1.1em 0;
+    }
+    tr:nth-child(even) {
+        background: #f4faff;
+    }
+</style>
+<table class="algoritmes">
+    <tr>
+        <td><input placeholder="Zoek op naam" style="font-size: 1em"></td>
+        <td><select>
+            <option>Alle organisaties</option>
+            <option>Alleen Gemeente X</option>
+            <option>Alleen Gemeente Y</option>
+        </select></td>
+        <td></td>
+        <td><select>
+            <option>Alle thema's</option>
+            <option>Natuur</option>
+            <option>Financien</option>
+            <option>Integratie</option>
+            <option>Recht</option>
+        </select></td>
+        <td><select>
+            <option>Alle statussen</option>
+            <option>Alleen in ontwikkeling</option>
+            <option>Alleen in gebruik</option>
+        </select></td>
+        <td><select>
+            <option>Alle categorieën</option>
+            <option>Alleen hoog risico</option>
+            <option>Alleen laag risico</option>
+        </select></td>
+        <td><select>
+            <option>Alle types</option>
+            <option>Alleen Neuraal netwerk</option>
+        </select></td>
+    </tr>
+    <tr>
+        <!-- <th>Foto</th> -->
+        <th>Naam</th>
+        <th>Organisatie</th>
+        <th>Afdeling</th>
+        <th>Thema</th>
+        <th>Status</th>
+        <th>Categorie</th>
+        <th>Type</th>
+    </tr>
+    {% for i in (1..25) %}
+    <tr>
+        <!-- <td><img src=""></td> -->
+        <td><a href="https://beheer.algoritmeregister.nl/details/9469970a-3b1d-11ed-9ca4-13042582e0dc" target="_blank">Testalgoritme</a></td>
+        <td>Gemeente Amsterdam</td>
+        <td>Parkeerwacht</td>
+        <td>Verkeer</td>
+        <td>In gebruik</td>
+        <td>Hoog risico</td>
+        <td>Neuraal netwerk</td>
+    </tr>
+    {% endfor %}
+</table>
+<center><p>
+    <a href="#">&lt; vorige pagina</a>
+    &emsp; <b>pagina 3</b> &emsp;
+    <a href="#">volgende pagina &gt;</a>
+</p></center>

@@ -9,7 +9,7 @@
   organisation: Gemeente Rotterdam
   description: Welkom op het algoritmeregister. Via deze pagina geeft gemeente Rotterdam u inzicht in algoritmes die de gemeente gebruikt bij het efficiënt uitvoeren van haar werkzaamheden.
   type: website
-  tool: 
+  tool: algemene cms
   url: https://www.rotterdam.nl/algoritmeregister
   status: in gebruik
 - title: Algoritmeregister Rotterdam
@@ -51,7 +51,7 @@
   organisation: Rijksdienst voor Identiteitsgegevens
   description: RvIG beheert de Basisregistratie Personen (BRP), het stelsel van reisdocumenten, de persoonsgegevens van personen in Caribisch Nederland, het Basisregister Reisdocumenten, het Verificatieregister. Bij verschillende onderdelen van de dienstverlening die RvIG biedt wordt gebruik gemaakt van algoritmes.
   type: website
-  tool: 
+  tool: algemene cms
   url: https://www.rvig.nl/over-rvig/algoritmeregister
   status: in ontwikkeling
 - title: Algoritmeregister Noord-Holland
@@ -68,3 +68,10 @@
   tool:
   url: 
   status: in ontwikkeling
+- title: Algoritmeregister UWV
+  organisation: Uitvoeringsinstituut Werknemersverzekeringen
+  description:
+  type: website
+  tool: algeme cms
+  url: https://www.uwv.nl/overuwv/algoritmes-bij-uwv/
+  status: in gebruik

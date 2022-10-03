@@ -70,7 +70,7 @@
   status: in ontwikkeling
 - title: Algoritmeregister UWV
   organisation: Uitvoeringsinstituut Werknemersverzekeringen
-  description:
+  description: Voor ieder algoritme leggen wij uit welke gegevens we gebruiken en wat het doel is. Het algoritmeregister is nog niet compleet.
   type: website
   tool: algeme cms
   url: https://www.uwv.nl/overuwv/algoritmes-bij-uwv/

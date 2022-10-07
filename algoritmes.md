@@ -1,7 +1,7 @@
 ---
 layout: algoritmeregisters
 ---
-<div class="cards">
+<!-- <div class="cards">
     <div class="card" style="background: #FFFFCC">
         <div style="float:right">
             <p style="font-size:0.85em">in ontwikkeling</p>
@@ -22,6 +22,6 @@ layout: algoritmeregisters
             /></a>
         </p>
     </div>
-</div>
+</div> -->
 
 {% include algoritmes.html %}

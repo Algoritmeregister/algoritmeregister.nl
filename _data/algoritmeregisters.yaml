@@ -2,14 +2,14 @@
   organisation: Gemeente Den Haag
   description: Het algoritmeregister is een overzicht van algoritmes die de gemeente Den Haag gebruikt bij haar gemeentelijke dienstverlening. De gemeente wil transparant zijn over het gebruik van algoritmes en kunnen uitleggen hoe een besluit tot stand is gekomen.
   type: databestand
-  tool: spreadsheet
+  tool: excel
   url: https://data.overheid.nl/en/dataset/algoritme-register
   status: in gebruik
 - title: Algoritmeregister Rotterdam
   organisation: Gemeente Rotterdam
   description: Welkom op het algoritmeregister. Via deze pagina geeft gemeente Rotterdam u inzicht in algoritmes die de gemeente gebruikt bij het efficiënt uitvoeren van haar werkzaamheden.
   type: website
-  tool: algemene cms
+  tool: website cms
   url: https://www.rotterdam.nl/algoritmeregister
   status: in gebruik
 - title: Algoritmeregister Rotterdam
@@ -30,28 +30,28 @@
   organisation: Gemeente Utrecht
   description: Dit is het Utrechtse algoritmeregister. Hier vindt u een overzicht van de Utrechtse digitaliseringstrajecten waarbij een algoritme en/of voorspellend model een rol vervult.
   type: databestand
-  tool: spreadsheet
+  tool: excel
   url: https://data.overheid.nl/en/dataset/utrecht-algoritmeregister-utrecht
   status: in gebruik
 - title: Algoritmeregister Noord-Brabant
   organisation: Provincie Noord-Brabant
   description: 
   type: databestand
-  tool: spreadsheet
+  tool: excel
   url: 
   status: in ontwikkeling
 - title: Algoritmeregister Zuid-Holland
   organisation: Provincie Zuid-Holland
   description: 
   type: databestand
-  tool: spreadsheet
+  tool: excel
   url: 
   status: in ontwikkeling
 - title: Algoritmeregister RvIG
   organisation: Rijksdienst voor Identiteitsgegevens
   description: RvIG beheert de Basisregistratie Personen (BRP), het stelsel van reisdocumenten, de persoonsgegevens van personen in Caribisch Nederland, het Basisregister Reisdocumenten, het Verificatieregister. Bij verschillende onderdelen van de dienstverlening die RvIG biedt wordt gebruik gemaakt van algoritmes.
   type: website
-  tool: algemene cms
+  tool: website cms
   url: https://www.rvig.nl/over-rvig/algoritmeregister
   status: in ontwikkeling
 - title: Algoritmeregister Noord-Holland
@@ -72,6 +72,6 @@
   organisation: Uitvoeringsinstituut Werknemersverzekeringen
   description: Voor ieder algoritme leggen wij uit welke gegevens we gebruiken en wat het doel is. Het algoritmeregister is nog niet compleet.
   type: website
-  tool: algeme cms
+  tool: website cms
   url: https://www.uwv.nl/overuwv/algoritmes-bij-uwv/
   status: in gebruik

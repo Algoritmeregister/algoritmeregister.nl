@@ -1,5 +1,5 @@
 ---
-layout: algoritmeregisters
+layout: algoritmes-zoeken
 ---
 <!-- <div class="cards">
     <div class="card" style="background: #FFFFCC">

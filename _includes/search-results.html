@@ -29,27 +29,10 @@
 		</div>
 		<div class="layout-1 layout-md-3-4">
 			<h1 class="text-h1 m-b4 m-t3">101 Zoekresultaten</h1>
-    		{% for i in (1..10) %}
-				<div class="m-y4">
-					<h2 class="text-h2 m-b2 color-2">Regionaal verkeersmodel: V-MRDH</h2>
-					<p class="text-body m-b4">Het gaat om het Verkeersmodel van de Metropoolregio Rotterdam Den Haag, kortweg V-MRDH. Dit model is het verkeersmodel voor strategische studies in de MRDH, dus ook in de Gemeente Den Haag.</p>
-					<div class="u-flex">
-						<div class="m-r5">
-							<h4 class="text-h4">Organisatie</h4>
-							<p class="text-body">Gemeente Den Haag</p>
-						</div>
-						<div class="m-r5">
-							<h4 class="text-h4">Thema</h4>
-							<p class="text-body">Verkeer</p>
-						</div>
-						<div class="m-r5">
-							<h4 class="text-h4">Categorie</h4>
-							<p class="text-body">Hoog risico</p>
-						</div>
-					</div>
-				</div>
-				<hr class="hr">
-			{% endfor %}
+			{% include placeholder-search-results.html %}
+			{% comment %}
+			{% include real-search-results.html %}
+			{% endcomment %}
 			<div class="m-y4">
 				<div class="u-flex">
 					<a href="#" class="u-display-inline-block m-r2 text-h4 color-1 color-bg-2 p-1 u-border-radius">1</a>

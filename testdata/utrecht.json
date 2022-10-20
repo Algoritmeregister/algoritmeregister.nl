@@ -1,0 +1,386 @@
+{
+    "Ruimte": [
+      {
+        "1. Naam van het proces": "Geluidsmodel",
+        "2. Omschrijving van het proces": "Het voorspellen of de geluidsnormen worden overtreden in een bepaald gebied",
+        "3. Wat is de rol van het algoritme of voorspellend model binnen het proces?": "Het algoritme combineert criteria aan een bestand van bepaalde gebieden en geeft informatie of er sprake is van overschrijding van de geluidsnormen",
+        "4. Geeft het algoritme of voorspellend model informatie of neemt het zelfstandig een besluit?": "Het algoritme geeft informatie en dit stelt een medewerker in staat om, mede op basis hiervan, het juiste besluit te nemen. Het algoritme heeft dus niet het laatste woord, maar een medewerker",
+        "5. Is een Privacy Impact Assessment uitgevoerd?": "Nee, in overleg met de DISO en de FG is bepaald dat een Privacy Impact Assessment niet nodig is",
+        "6. Is een Uthiek Assessment uitgevoerd?": "Nee, omdat we bij aanvang van deze toepassing nog geen Uthiek Assessments uitvoerden"
+      },
+      {
+        "1. Naam van het proces": "Luchtkwaliteitsmodel",
+        "2. Omschrijving van het proces": "Het voorspellen of de luchtkwaliteitsnormen worden overtreden in een bepaald gebied",
+        "3. Wat is de rol van het algoritme of voorspellend model binnen het proces?": "Het algoritme combineert criteria aan een bestand van bepaalde gebieden en geeft informatie of er sprake is van overschrijding van de luchtkwaliteitsnormen",
+        "4. Geeft het algoritme of voorspellend model informatie of neemt het zelfstandig een besluit?": "Het algoritme geeft informatie en dit stelt een medewerker in staat om, mede op basis hiervan, het juiste besluit te nemen. Het algoritme heeft dus niet het laatste woord, maar een medewerker",
+        "5. Is een Privacy Impact Assessment uitgevoerd?": "Nee, in overleg met de DISO en de FG is bepaald dat een Privacy Impact Assessment niet nodig is",
+        "6. Is een Uthiek Assessment uitgevoerd?": "Nee, omdat we bij aanvang van deze toepassing nog geen Uthiek Assessments uitvoerden"
+      },
+      {
+        "1. Naam van het proces": "Signaleren vogels",
+        "2. Omschrijving van het proces": "Het voorspellen van het aantal vogels in een bepaald gebied",
+        "3. Wat is de rol van het algoritme of voorspellend model binnen het proces?": "Het algoritme combineert historische data tot informatie over het aantal vogels in een bepaald gebied in de nabije toekomst",
+        "4. Geeft het algoritme of voorspellend model informatie of neemt het zelfstandig een besluit?": "Het algoritme geeft informatie en dit stelt een medewerker in staat om, mede op basis hiervan, het juiste besluit te nemen. Het algoritme heeft dus niet het laatste woord, maar een medewerker",
+        "5. Is een Privacy Impact Assessment uitgevoerd?": "Nee, in overleg met de DISO en de FG is bepaald dat een Privacy Impact Assessment niet nodig is",
+        "6. Is een Uthiek Assessment uitgevoerd?": "Nee, omdat we bij aanvang van deze toepassing nog geen Uthiek Assessments uitvoerden"
+      },
+      {
+        "1. Naam van het proces": "Woonbouwlocaties",
+        "2. Omschrijving van het proces": "Het voorspellen van vraag en aanbod van het aantal woonbouwlocaties in een bepaald gebied",
+        "3. Wat is de rol van het algoritme of voorspellend model binnen het proces?": "Het model combineert veel verschillende soorten data (bijv demografie, economie) tot informatie over de woningmarkt in de nabije toekomst in een bepaald gebied\nHet model vindt zijn neerslag in de Woonvisie 'Utrecht beter in balans' en de monitor Wonen.",
+        "4. Geeft het algoritme of voorspellend model informatie of neemt het zelfstandig een besluit?": "We verzamelen cijfers (zoals prognoses, woningbehoefte, voorraadsamenstelling) en houden de voortgang (productie, meer menging) bij. Het model geeft informatie over de woningvoorraaad en dit stelt een medewerker in staat om, mede op basis hiervan, het juiste besluit te nemen. Het model heeft dus niet het laatste woord, maar een medewerker",
+        "5. Is een Privacy Impact Assessment uitgevoerd?": "Nee, in overleg met de DISO en de FG is bepaald dat een Privacy Impact Assessment niet nodig is",
+        "6. Is een Uthiek Assessment uitgevoerd?": "Nee, omdat we bij aanvang van deze toepassing nog geen Uthiek Assessments uitvoerden"
+      }
+    ],
+    "Stadsbedrijven": [
+      {
+        "1. Naam van het proces": "Dynamisch inzamelen afval",
+        "2. Omschrijving van het proces": "Het voorspellen van het juiste moment waarop afvalcontainers geleegd kunnen worden en daar de route en het schema van de vuilniswagen op inrichten",
+        "3. Wat is de rol van het algoritme of voorspellend model binnen het proces?": "Het algoritme combineert informatie van de sensoren mbt de vulgraad in de ondergrondse afvalcontainers tot informatie voor de meest effectieve rijroute en schema van de vuilniswagens",
+        "4. Geeft het algoritme of voorspellend model informatie of neemt het zelfstandig een besluit?": "Het algoritme geeft informatie en dit stelt een medewerker in staat om, mede op basis hiervan, het juiste besluit te nemen. Het algoritme heeft dus niet het laatste woord, maar een medewerker.",
+        "5. Is een Privacy Impact Assessment uitgevoerd?": "Ja",
+        "6. Is een Uthiek Assessment uitgevoerd?": "Nee, omdat we bij aanvang van deze toepassing nog geen Uthiek Assessments uitvoerden"
+      },
+      {
+        "1. Naam van het proces": "Slim vegen",
+        "2. Omschrijving van het proces": "Het voorspellen van de meest nuttige rijroutes van veegwagens",
+        "3. Wat is de rol van het algoritme of voorspellend model binnen het proces?": "Het algoritme combineert historische data mbt rijroutes van veegwagens tot informatie voor de meest effectieve rijroute en schema van de veegwagens",
+        "4. Geeft het algoritme of voorspellend model informatie of neemt het zelfstandig een besluit?": "Het algoritme geeft informatie en dit stelt een medewerker in staat om, mede op basis hiervan, het juiste besluit te nemen. Het algoritme heeft dus niet het laatste woord, maar een medewerker.",
+        "5. Is een Privacy Impact Assessment uitgevoerd?": "Ja",
+        "6. Is een Uthiek Assessment uitgevoerd?": "Nee, omdat we bij aanvang van deze toepassing nog geen Uthiek Assessments uitvoerden"
+      },
+      {
+        "1. Naam van het proces": "Vervanging lichtmasten",
+        "2. Omschrijving van het proces": "Het voorspellen van het juiste moment waarop lichtmasten aan vervanging toe zijn",
+        "3. Wat is de rol van het algoritme of voorspellend model binnen het proces?": "Het algoritme combineert criteria aan een bestand van lichtmasten tot informatie over welke lichtmasten in aanmerking komen voor vervanging",
+        "4. Geeft het algoritme of voorspellend model informatie of neemt het zelfstandig een besluit?": "Het algoritme geeft informatie en dit stelt een medewerker in staat om, mede op basis hiervan, het juiste besluit te nemen. Het algoritme heeft dus niet het laatste woord, maar een medewerker.",
+        "5. Is een Privacy Impact Assessment uitgevoerd?": "Nee, in overleg met de DISO en de FG is bepaald dat een Privacy Impact Assessment niet nodig is",
+        "6. Is een Uthiek Assessment uitgevoerd?": "Nee, omdat we bij aanvang van deze toepassing nog geen Uthiek Assessments uitvoerden"
+      },
+      {
+        "1. Naam van het proces": "Stedelijk water",
+        "2. Omschrijving van het proces": "Het voorspellen van de hoogte van het stedelijk water en de riolering",
+        "3. Wat is de rol van het algoritme of voorspellend model binnen het proces?": "Het algoritme combineert historische data van de sensoren mbt waterstanden van het stedelijk water tot informatie over de waterstanden in de nabije toekomst",
+        "4. Geeft het algoritme of voorspellend model informatie of neemt het zelfstandig een besluit?": "Het algoritme geeft informatie en dit stelt een medewerker in staat om, mede op basis hiervan, het juiste besluit te nemen. Het algoritme heeft dus niet het laatste woord, maar een medewerker.",
+        "5. Is een Privacy Impact Assessment uitgevoerd?": "Nee, in overleg met de DISO en de FG is bepaald dat een Privacy Impact Assessment niet nodig is",
+        "6. Is een Uthiek Assessment uitgevoerd?": "Nee, omdat we bij aanvang van deze toepassing nog geen Uthiek Assessments uitvoerden"
+      },
+      {
+        "1. Naam van het proces": "Onderhoud wagenpark",
+        "2. Omschrijving van het proces": "Het voorspellen van het juiste moment waarop onderhoud nodig is bij het wagenpark",
+        "3. Wat is de rol van het algoritme of voorspellend model binnen het proces?": "Het algoritme combineert criteria aan een bestand van wagenparken en geeft informatie over welke wagenparken wanneer in aanmerking komen voor onderhoud",
+        "4. Geeft het algoritme of voorspellend model informatie of neemt het zelfstandig een besluit?": "Het algoritme geeft informatie en dit stelt een medewerker in staat om, mede op basis hiervan, het juiste besluit te nemen. Het algoritme heeft dus niet het laatste woord, maar een medewerker.",
+        "5. Is een Privacy Impact Assessment uitgevoerd?": "Ja",
+        "6. Is een Uthiek Assessment uitgevoerd?": "Nee, omdat we bij aanvang van deze toepassing nog geen Uthiek Assessments uitvoerden"
+      },
+      {
+        "1. Naam van het proces": "Objectherkenning straatafval",
+        "2. Omschrijving van het proces": "Het geautomatiseerd herkennen van verschillende typen straatafval",
+        "3. Wat is de rol van het algoritme of voorspellend model binnen het proces?": "Het algoritme combineert historische data mbt kenmerken van verschillende typen straatafval tot informatie over welke type straatafval het betreft",
+        "4. Geeft het algoritme of voorspellend model informatie of neemt het zelfstandig een besluit?": "Het algoritme geeft informatie en dit stelt een medewerker in staat om, mede op basis hiervan, het juiste besluit te nemen. Het algoritme heeft dus niet het laatste woord, maar een medewerker.",
+        "5. Is een Privacy Impact Assessment uitgevoerd?": "Ja",
+        "6. Is een Uthiek Assessment uitgevoerd?": "Nee, omdat we bij aanvang van deze toepassing nog geen Uthiek Assessments uitvoerden"
+      }
+    ],
+    "VTH": [
+      {
+        "1. Naam van het proces": "Parkeerhandhaving; Inzet scanauto's",
+        "2. Omschrijving van het proces": "Het controleren met scanauto's of het parkeergeld is betaald",
+        "3. Wat is de rol van het algoritme of voorspellend model binnen het proces?": "De scanauto maakt een scan van het kenteken en foto's van de situatie. Daarna volgt een automatische controle via het Nationaal Parkeer Register of parkeergeld betaald is. Indien het parkeergeld niet is betaald wordt de constatering automatisch aangeboden aan de handhaver die een extra controle uitvoert.",
+        "4. Geeft het algoritme of voorspellend model informatie of neemt het zelfstandig een besluit?": "Het algoritme geeft informatie en dit stelt een medewerker in staat om, mede op basis hiervan, het juiste besluit te nemen. Het algoritme heeft dus niet het laatste woord, maar een medewerker",
+        "5. Is een Privacy Impact Assessment uitgevoerd?": "Ja",
+        "6. Is een Uthiek Assessment uitgevoerd?": "Nee, omdat we bij aanvang van deze toepassing nog geen Uthiek Assessments uitvoerden"
+      },
+      {
+        "1. Naam van het proces": "Parkeerhandhaving; Betalingsbereidheid",
+        "2. Omschrijving van het proces": "Het monitoren van de bereidheid om parkeergeld te betalen",
+        "3. Wat is de rol van het algoritme of voorspellend model binnen het proces?": "Het algoritme berekent de betalingsbereidheid van parkeerders uit historische scandata van de scanauto.",
+        "4. Geeft het algoritme of voorspellend model informatie of neemt het zelfstandig een besluit?": "Het algoritme geeft informatie en dit stelt een medewerker in staat om, mede op basis hiervan, het juiste besluit te nemen. Het algoritme heeft dus niet het laatste woord, maar een medewerker",
+        "5. Is een Privacy Impact Assessment uitgevoerd?": "Ja",
+        "6. Is een Uthiek Assessment uitgevoerd?": "Nee, omdat we bij aanvang van deze toepassing nog geen Uthiek Assessments uitvoerden"
+      },
+      {
+        "1. Naam van het proces": "Parkeerhandhaving; Werkverdeling scanteam",
+        "2. Omschrijving van het proces": "Het gericht inzetten van parkeerhandhaving met de scanauto",
+        "3. Wat is de rol van het algoritme of voorspellend model binnen het proces?": "Het algoritme voorspelt de bereidheid om parkeergeld te betalen per locatie en tijd uit historische scan- en transactiedata.",
+        "4. Geeft het algoritme of voorspellend model informatie of neemt het zelfstandig een besluit?": "Het algoritme geeft informatie en dit stelt een medewerker in staat om, mede op basis hiervan, het juiste besluit te nemen. Het algoritme heeft dus niet het laatste woord, maar een medewerker",
+        "5. Is een Privacy Impact Assessment uitgevoerd?": "Ja",
+        "6. Is een Uthiek Assessment uitgevoerd?": "Nee, omdat we bij aanvang van deze toepassing nog geen Uthiek Assessments uitvoerden"
+      },
+      {
+        "1. Naam van het proces": "Parkeren; Opbrengsten straatparkeren",
+        "2. Omschrijving van het proces": "Het monitoren en begroten van de opbrengsten van straatparkeeren",
+        "3. Wat is de rol van het algoritme of voorspellend model binnen het proces?": "Het algoritme voorspelt  de maandelijkse opbrengsten van straatparkeren uit historische betalingen van parkeergeld.",
+        "4. Geeft het algoritme of voorspellend model informatie of neemt het zelfstandig een besluit?": "Het algoritme geeft informatie en dit stelt een medewerker in staat om, mede op basis hiervan, het juiste besluit te nemen. Het algoritme heeft dus niet het laatste woord, maar een medewerker",
+        "5. Is een Privacy Impact Assessment uitgevoerd?": "Nee, omdat het bij aanvang van deze toepassing nog niet verplicht was om Privacy Impact Assessment uit te voeren",
+        "6. Is een Uthiek Assessment uitgevoerd?": "Nee, omdat we bij aanvang van deze toepassing nog geen Uthiek Assessments uitvoerden"
+      },
+      {
+        "1. Naam van het proces": "Parkeren; Parkeerdruk",
+        "2. Omschrijving van het proces": "Het monitoren van de parkeerdruk in het gebied van betaald parkeren",
+        "3. Wat is de rol van het algoritme of voorspellend model binnen het proces?": "Het algoritme berekent per straat en tijd de bezettinggraad van de parkeerruimte uit historische scandata van de scanauto.",
+        "4. Geeft het algoritme of voorspellend model informatie of neemt het zelfstandig een besluit?": "Het algoritme geeft informatie en dit stelt een medewerker in staat om, mede op basis hiervan, het juiste besluit te nemen. Het algoritme heeft dus niet het laatste woord, maar een medewerker",
+        "5. Is een Privacy Impact Assessment uitgevoerd?": "Nee, omdat het bij aanvang van deze toepassing nog niet verplicht was om Privacy Impact Assessment uit te voeren",
+        "6. Is een Uthiek Assessment uitgevoerd?": "Nee, omdat we bij aanvang van deze toepassing nog geen Uthiek Assessments uitvoerden"
+      },
+      {
+        "1. Naam van het proces": "Vergunningverlening; Wonen",
+        "2. Omschrijving van het proces": "Het uitvoeren van de algemene leefbaarheidstoets",
+        "3. Wat is de rol van het algoritme of voorspellend model binnen het proces?": "Het algoritme combineert en presentreert vastgoedgegevens, gebruikskenmerken en vergunningsgegevens van woningen.",
+        "4. Geeft het algoritme of voorspellend model informatie of neemt het zelfstandig een besluit?": "Het algoritme geeft informatie en dit stelt een medewerker in staat om, mede op basis hiervan, het juiste besluit te nemen. Het algoritme heeft dus niet het laatste woord, maar een medewerker",
+        "5. Is een Privacy Impact Assessment uitgevoerd?": "Ja",
+        "6. Is een Uthiek Assessment uitgevoerd?": "Nee, omdat we bij aanvang van deze toepassing nog geen Uthiek Assessments uitvoerden"
+      },
+      {
+        "1. Naam van het proces": "Handhaving drank- en horecawet",
+        "2. Omschrijving van het proces": "Het gericht controleren de horeca-inrichtingen op het naleven van de drank en horecawet",
+        "3. Wat is de rol van het algoritme of voorspellend model binnen het proces?": "Het algoritme combineert en weegt het type horeca-inrichting met historische meldingen en maatregelen van de horeca ondernemingen.",
+        "4. Geeft het algoritme of voorspellend model informatie of neemt het zelfstandig een besluit?": "Het algoritme geeft informatie en dit stelt een medewerker in staat om, mede op basis hiervan, het juiste besluit te nemen. Het algoritme heeft dus niet het laatste woord, maar een medewerker",
+        "5. Is een Privacy Impact Assessment uitgevoerd?": "Nee, omdat het bij aanvang van deze toepassing nog niet verplicht was om Privacy Impact Assessment uit te voeren",
+        "6. Is een Uthiek Assessment uitgevoerd?": "Nee, omdat we bij aanvang van deze toepassing nog geen Uthiek Assessments uitvoerden"
+      },
+      {
+        "1. Naam van het proces": "Toezicht en Handhaving Vastgoedmisbruik (Huisjesmelkers)",
+        "2. Omschrijving van het proces": "Het gericht controleren de o.a.  goed verhuurderschap op het naleven van de woningwet",
+        "3. Wat is de rol van het algoritme of voorspellend model binnen het proces?": "Het algoritme combineert en presentreert vastgoedgegevens middels indicatoren ter ondersteuning van de inspecteurs en toezichthouders",
+        "4. Geeft het algoritme of voorspellend model informatie of neemt het zelfstandig een besluit?": "Het algoritme geeft informatie en dit stelt een medewerker in staat om, mede op basis hiervan, het juiste besluit te nemen. Het algoritme heeft dus niet het laatste woord, maar een bevoegde toezichthouder of inspecteur.",
+        "5. Is een Privacy Impact Assessment uitgevoerd?": "Ja",
+        "6. Is een Uthiek Assessment uitgevoerd?": "Nee, omdat we bij aanvang van deze toepassing nog geen Uthiek Assessments uitvoerden. Er is wel een DEDA uitgevoerd"
+      },
+      {
+        "1. Naam van het proces": "Toezicht en Handhaving Weesfietsen",
+        "2. Omschrijving van het proces": "Het gerichter inzetten van handhavers voor de leefbaarheid in de openbare ruimte ten aanzien van weesfietsen en fietswrakken als naleving van de Algemene Plaatselijke Verordening (APV)",
+        "3. Wat is de rol van het algoritme of voorspellend model binnen het proces?": "Het algoritme combineert en presentreert handhavingsdata en meldingen middels een kaart ter ondersteuning van de handhavers en planners zodat weesfietsacties doelmatiger kunnen worden ingezet.",
+        "4. Geeft het algoritme of voorspellend model informatie of neemt het zelfstandig een besluit?": "Het algoritme geeft informatie en dit stelt een planner in staat om, mede op basis hiervan, efficienter te plannen. Het algoritme heeft dus niet het laatste woord, maar medewerker zelf.",
+        "5. Is een Privacy Impact Assessment uitgevoerd?": "Nee, omdat er bij deze bewerking geen persoonsgegevens worden verwerkt.",
+        "6. Is een Uthiek Assessment uitgevoerd?": "Nee, omdat we bij aanvang van deze toepassing nog geen Uthiek Assessments uitvoerden."
+      },
+      {
+        "1. Naam van het proces": "Toezicht en Handhaving Vuurwerk",
+        "2. Omschrijving van het proces": "Het gerichter inzetten van handhavers voor de leefbaarheid in de openbare ruimte ten aanzien van vuurwerkoverlast als naleving van de Algemene Plaatselijke Verordening (APV)",
+        "3. Wat is de rol van het algoritme of voorspellend model binnen het proces?": "Het algoritme combineert en presentreert handhavingsdata en meldingen middels een kaart ter ondersteuning van de handhavers en planners zodat toezicht doelmatiger kunnen worden ingezet.",
+        "4. Geeft het algoritme of voorspellend model informatie of neemt het zelfstandig een besluit?": "Het algoritme geeft informatie en dit stelt een planner in staat om, mede op basis hiervan, efficienter te plannen. Het algoritme heeft dus niet het laatste woord, maar medewerker zelf.",
+        "5. Is een Privacy Impact Assessment uitgevoerd?": "Nee, omdat er bij deze bewerking geen persoonsgegevens worden verwerkt.",
+        "6. Is een Uthiek Assessment uitgevoerd?": "Nee, omdat we bij aanvang van deze toepassing nog geen Uthiek Assessments uitvoerden."
+      },
+      {
+        "1. Naam van het proces": "Toezicht en Handhaving Corona maatregelingen",
+        "2. Omschrijving van het proces": "Het gerichter inzetten van handhavers voor de leefbaarheid in de openbare ruimte ten aanzien van het naleven van Corona maatregelingen als naleving van de Algemene Plaatselijke Verordening (APV)",
+        "3. Wat is de rol van het algoritme of voorspellend model binnen het proces?": "Het algoritme combineert en presentreert meldingen middels een kaart ter ondersteuning van de handhavers en planners zodat toezicht doelmatiger kunnen worden ingezet.",
+        "4. Geeft het algoritme of voorspellend model informatie of neemt het zelfstandig een besluit?": "Het algoritme geeft informatie en dit stelt een planner in staat om, mede op basis hiervan, efficienter te plannen. Het algoritme heeft dus niet het laatste woord, maar medewerker zelf.",
+        "5. Is een Privacy Impact Assessment uitgevoerd?": "Nee, omdat er bij deze bewerking geen persoonsgegevens worden verwerkt.",
+        "6. Is een Uthiek Assessment uitgevoerd?": "Nee, omdat we bij aanvang van deze toepassing nog geen Uthiek Assessments uitvoerden."
+      },
+      {
+        "1. Naam van het proces": "Toezicht en Handhaving Milieu",
+        "2. Omschrijving van het proces": "Het gerichter inzetten van inspecteurs op naleven van Milieuwetten door ondernemingen",
+        "3. Wat is de rol van het algoritme of voorspellend model binnen het proces?": "Het algoritme gebruikt mutaties in de kamer van koophandel ter ondersteuning van de inspecteurs en zodat toezicht doelmatiger kunnen worden ingezet en milieuschade kan worden voorkomen.",
+        "4. Geeft het algoritme of voorspellend model informatie of neemt het zelfstandig een besluit?": "Het algoritme geeft informatie en dit stelt een inspecteur in staat om, mede op basis hiervan, efficienter toezicht te houden. Het algoritme heeft dus niet het laatste woord, maar toezichthouder zelf.",
+        "5. Is een Privacy Impact Assessment uitgevoerd?": "Nee, omdat er bij deze bewerking geen persoonsgegevens worden verwerkt.",
+        "6. Is een Uthiek Assessment uitgevoerd?": "Nee, omdat we bij aanvang van deze toepassing nog geen Uthiek Assessments uitvoerden."
+      }
+    ],
+    "Vastgoed": [
+      {
+        "1. Naam van het proces": "",
+        "2. Omschrijving van het proces": "",
+        "3. Wat is de rol van het algoritme of voorspellend model binnen het proces?": "",
+        "4. Geeft het algoritme of voorspellend model informatie of neemt het zelfstandig een besluit?": "",
+        "5. Is een Privacy Impact Assessment uitgevoerd?": "",
+        "6. Is een Uthiek Assessment uitgevoerd?": ""
+      },
+      {
+        "1. Naam van het proces": "Bij het organisatieonderdeel Vastgoed worden GEEN algoritmen of voorspellende modellen toegepast die impact hebben op de stad",
+        "2. Omschrijving van het proces": "",
+        "3. Wat is de rol van het algoritme of voorspellend model binnen het proces?": "",
+        "4. Geeft het algoritme of voorspellend model informatie of neemt het zelfstandig een besluit?": "",
+        "5. Is een Privacy Impact Assessment uitgevoerd?": "",
+        "6. Is een Uthiek Assessment uitgevoerd?": ""
+      }
+    ],
+    "MO": [
+      {
+        "1. Naam van het proces": "Veranderingen in het aantal aanmeldingen jeugdhulp en WMO-ondersteuning als gevolg van het Coronavirus",
+        "2. Omschrijving van het proces": "Het voorspellen van veranderingen in het aantal aanmeldingen jeugdhulp en Wmo-ondersteuning als gevolg van het Coronavirus",
+        "3. Wat is de rol van het algoritme of voorspellend model binnen het proces?": "Het algoritme combineert historische data (voorgaande jaren) en huidige data (Corona tijd) mbt aantallen aanmeldingen jeugdhulp en Wmo-ondersteuning  tot informatie over het aantal aanmeldingen in de nabije toekomst. Het wordt verrijkt met praktijkervaringen van de professionals van de betrokken partners zodat scenario's kunnen worden geschetst",
+        "4. Geeft het algoritme of voorspellend model informatie of neemt het zelfstandig een besluit?": "Het algoritme geeft informatie en deze wordt besproken door medewerkers van de gemeente en partners zodat zij het goede gesprek kunnen voeren over de mogelijke ontwikkelingen in het domein van de Jeugdwet en Wmo. Op basis van de bespreking wordt het algoritme aangepast",
+        "5. Is een Privacy Impact Assessment uitgevoerd?": "Ja",
+        "6. Is een Uthiek Assessment uitgevoerd?": "Nee, omdat we bij aanvang van deze toepassing nog geen Uthiek Assessments uitvoerden"
+      }
+    ],
+    "VG": [
+      {
+        "1. Naam van het proces": "Jeugdgezondheidszorg",
+        "2. Omschrijving van het proces": "Het monitoren van de ontwikkeling van kinderen van 0-4 jaar",
+        "3. Wat is de rol van het algoritme of voorspellend model binnen het proces?": "Het algoritme combineert informatie van het betreffende kind met historische data van andere kinderen en geeft informatie over de ontwikkeling van het kind. Bijvoorbeeld: Meetgegevens, zoals lengte en gewicht, worden vergeleken met data van grote groepen kinderen (groeicurve) en geeft informatie over de ontwikkeling van het kind.",
+        "4. Geeft het algoritme of voorspellend model informatie of neemt het zelfstandig een besluit?": "Het algoritme geeft informatie en dit stelt een medewerker in staat om, mede op basis hiervan, het juiste besluit te nemen. Het algoritme heeft dus niet het laatste woord, maar een medewerker.",
+        "5. Is een Privacy Impact Assessment uitgevoerd?": "Ja",
+        "6. Is een Uthiek Assessment uitgevoerd?": "Nee, omdat we bij aanvang van deze toepassing nog geen Uthiek Assessments uitvoerden"
+      },
+      {
+        "1. Naam van het proces": "Voor- en Vroegschoolse Educatie (VVE)",
+        "2. Omschrijving van het proces": "Het bepalen welke kinderen in aanmerking komen voor Voor- en Vroegschoolse Educatie (VVE)",
+        "3. Wat is de rol van het algoritme of voorspellend model binnen het proces?": "Het algoritme combineert criteria aan een bestand van kinderen en geeft informatie over welke kinderen in aanmerking komen voor VVE in de nabije toekomst.",
+        "4. Geeft het algoritme of voorspellend model informatie of neemt het zelfstandig een besluit?": "Het algoritme geeft informatie en dit stelt een medewerker in staat om, mede op basis hiervan, het juiste besluit te nemen. Het algoritme heeft dus niet het laatste woord, maar een medewerker.",
+        "5. Is een Privacy Impact Assessment uitgevoerd?": "Ja",
+        "6. Is een Uthiek Assessment uitgevoerd?": "Nee, omdat we bij aanvang van deze toepassing nog geen Uthiek Assessments uitvoerden"
+      },
+      {
+        "1. Naam van het proces": "Psychosociale gezondheid",
+        "2. Omschrijving van het proces": "Het in beeld brengen van psychosociale gezondheid bij kinderen met behulp van de SDQ vragenlijst",
+        "3. Wat is de rol van het algoritme of voorspellend model binnen het proces?": "Het algoritme combineert criteria aan informatie uit de vragenlijst van het betreffende kind en geeft informatie bij welke kinderen er aanleiding is om in gesprek te gaan over de psychosociale gezondheid.",
+        "4. Geeft het algoritme of voorspellend model informatie of neemt het zelfstandig een besluit?": "Het algoritme geeft informatie en dit stelt een medewerker in staat om, mede op basis hiervan, het juiste besluit te nemen. Het algoritme heeft dus niet het laatste woord, maar een medewerker.",
+        "5. Is een Privacy Impact Assessment uitgevoerd?": "Ja",
+        "6. Is een Uthiek Assessment uitgevoerd?": "Nee, omdat we bij aanvang van deze toepassing nog geen Uthiek Assessments uitvoerden"
+      }
+    ],
+    "W&I": [
+      {
+        "1. Naam van het proces": "Digitale afhandeling levensonderhoud",
+        "2. Omschrijving van het proces": "Het toekennen van een uitkering aan bewoners die daar recht op hebben",
+        "3. Wat is de rol van het algoritme of voorspellend model binnen het proces?": "Het algoritme controleert op basis van ingevulde velden in het aanvraagformulier van bewoners of bewoners in aanmerking komen voor een uitkering",
+        "4. Geeft het algoritme of voorspellend model informatie of neemt het zelfstandig een besluit?": "Het algoritme geeft informatie en dit stelt een medewerker in staat om, mede op basis hiervan, het juiste besluit te nemen. Het algoritme heeft dus niet het laatste woord, maar een medewerker.",
+        "5. Is een Privacy Impact Assessment uitgevoerd?": "Nee, omdat het bij aanvang van deze toepassing nog niet verplicht was om Privacy Impact Assessment uit te voeren",
+        "6. Is een Uthiek Assessment uitgevoerd?": "Nee, omdat we bij aanvang van deze toepassing nog geen Uthiek Assessments uitvoerden"
+      },
+      {
+        "1. Naam van het proces": "Fraude bestrijding",
+        "2. Omschrijving van het proces": "Het bestrijden van fraude door bewoners bij dienstverlening bij Werk en Inkomen producten",
+        "3. Wat is de rol van het algoritme of voorspellend model binnen het proces?": "Het algoritme filtert op onregelmatigheden in de logische samenhang van objectieve data. Het geeft daarmee een voorzet (informatie) over op welke adressen er mogelijk sprake kan zijn van fraude. Deze data wordt opgesteld uit de gegevens van WenI, het inlichtingenbureau en publieksdienstverlening.",
+        "4. Geeft het algoritme of voorspellend model informatie of neemt het zelfstandig een besluit?": "Het algoritme neemt geen zelfstandig besluit. Wanneer een uitdraai wordt gemaakt van deze gegevens,  wordt handmatig bekeken of er inderdaad sprake is van een onregelmatigheid. Vervolgens worden gegevens van het betreffende adres verrijkt met gegevens van andere organisaties (mits dit aan de orde is) en wordt als laatste in gezamenlijkheid aan de casustafel bekeken of het adres gecontroleerd gaat worden.",
+        "5. Is een Privacy Impact Assessment uitgevoerd?": "Ja",
+        "6. Is een Uthiek Assessment uitgevoerd?": "Ja"
+      },
+      {
+        "1. Naam van het proces": "Re-integratie naar werk - Matchen op werk",
+        "2. Omschrijving van het proces": "Het begeleiden van bewoners naar werk door het beter kunnen matchen van werkloze bewoners aan vacatures. Mooi matchen is een onderzoek naar kansrijke beroepsprofielen waarbij bijvoorbeeld bepaald wordt dat er in periode X relatief meer behoefte is aan kappers en relatief minder behoefte is aan verkeersregelaars",
+        "3. Wat is de rol van het algoritme of voorspellend model binnen het proces?": "Het algoritme combineert criteria aan een bestand van bewoners en geeft een voorzet (informatie) welke bewoners op basis van de kansrijke beroepsprofielen voldoen aan de criteria die de markt stelt aan deze vacatures.",
+        "4. Geeft het algoritme of voorspellend model informatie of neemt het zelfstandig een besluit?": "Het algoritme geeft informatie en dit stelt een medewerker in staat om, mede op basis hiervan, het juiste besluit te nemen. Het algoritme heeft dus niet het laatste woord, maar een medewerker.",
+        "5. Is een Privacy Impact Assessment uitgevoerd?": "Nee, omdat het bij aanvang van deze toepassing nog niet verplicht was om Privacy Impact Assessment uit te voeren",
+        "6. Is een Uthiek Assessment uitgevoerd?": "Nee, omdat we bij aanvang van deze toepassing nog geen Uthiek Assessments uitvoerden"
+      },
+      {
+        "1. Naam van het proces": "Toekennen uitkering participatiewet",
+        "2. Omschrijving van het proces": "Op basis van rekenregels wordt bepaald welke norm moet worden toegepast voor deze inwoner",
+        "3. Wat is de rol van het algoritme of voorspellend model binnen het proces?": "Het algoritme combineert criteria aan een bestand van bewoners en geeft een voorzet (informatie) welke norm moet worden toegepast.",
+        "4. Geeft het algoritme of voorspellend model informatie of neemt het zelfstandig een besluit?": "Het algoritme geeft informatie en dit stelt een medewerker in staat om, mede op basis hiervan, het juiste besluit te nemen. Het algoritme heeft dus niet het laatste woord, maar een medewerker.",
+        "5. Is een Privacy Impact Assessment uitgevoerd?": "Nee, omdat het bij aanvang van deze toepassing nog niet verplicht was om Privacy Impact Assessment uit te voeren",
+        "6. Is een Uthiek Assessment uitgevoerd?": "Nee, omdat we bij aanvang van deze toepassing nog geen Uthiek Assessments uitvoerden"
+      },
+      {
+        "1. Naam van het proces": "Re-integratie naar werk - Bepalen arrangement",
+        "2. Omschrijving van het proces": "Op basis van kenmerken van de klant wordt een indeling in de arrangementen gedaan.",
+        "3. Wat is de rol van het algoritme of voorspellend model binnen het proces?": "Het algoritme geeft op basis van geprogrammeerde beslisregels een suggestie van een arrangement dat iets zegt over de afstand tot de arbeidsmarkt. Op basis van deze arrangementsindeling wordt specifieke dienstverlening ingezet.",
+        "4. Geeft het algoritme of voorspellend model informatie of neemt het zelfstandig een besluit?": "Het algoritme geeft informatie en dit stelt een medewerker in staat om, mede op basis hiervan, het juiste besluit te nemen. Het algoritme geeft een suggestie voor een arrangement, dat kan worden overschreven door een medewerker als die een andere inschatting maakt.",
+        "5. Is een Privacy Impact Assessment uitgevoerd?": "Nee, omdat het bij aanvang van deze toepassing nog niet verplicht was om Privacy Impact Assessment uit te voeren",
+        "6. Is een Uthiek Assessment uitgevoerd?": "Nee, omdat we bij aanvang van deze toepassing nog geen Uthiek Assessments uitvoerden"
+      }
+    ],
+    "Wijken": [
+      {
+        "1. Naam van het proces": "",
+        "2. Omschrijving van het proces": "",
+        "3. Wat is de rol van het algoritme of voorspellend model binnen het proces?": "",
+        "4. Geeft het algoritme of voorspellend model informatie of neemt het zelfstandig een besluit?": "",
+        "5. Is een Privacy Impact Assessment uitgevoerd?": "",
+        "6. Is een Uthiek Assessment uitgevoerd?": ""
+      },
+      {
+        "1. Naam van het proces": "Bij het organisatieonderdeel Wijken worden GEEN algoritmen of voorspellende modellen toegepast die impact hebben op de stad",
+        "2. Omschrijving van het proces": "",
+        "3. Wat is de rol van het algoritme of voorspellend model binnen het proces?": "",
+        "4. Geeft het algoritme of voorspellend model informatie of neemt het zelfstandig een besluit?": "",
+        "5. Is een Privacy Impact Assessment uitgevoerd?": "",
+        "6. Is een Uthiek Assessment uitgevoerd?": ""
+      },
+      {
+        "1. Naam van het proces": "",
+        "2. Omschrijving van het proces": "",
+        "3. Wat is de rol van het algoritme of voorspellend model binnen het proces?": "",
+        "4. Geeft het algoritme of voorspellend model informatie of neemt het zelfstandig een besluit?": "",
+        "5. Is een Privacy Impact Assessment uitgevoerd?": "",
+        "6. Is een Uthiek Assessment uitgevoerd?": ""
+      }
+    ],
+    "Veiligheid": [
+      {
+        "1. Naam van het proces": "Woninginbraakvoorspeller",
+        "2. Omschrijving van het proces": "Het voorspellen van het risico op woninginbraak per gebied voor de komende twee weken",
+        "3. Wat is de rol van het algoritme of voorspellend model binnen het proces?": "Het algoritme combineert historische data mbt woninginbraak met kenmerken van woningen, buurtkenmerken en de omstandigheden ten tijde van de inbraak en geeft een voorzet (informatie) over een verhoogde kans op woninginbraak in een bepaald gebied in een bepaalde periode",
+        "4. Geeft het algoritme of voorspellend model informatie of neemt het zelfstandig een besluit?": "Het algoritme geeft informatie en dit stelt een medewerker in staat om, mede op basis hiervan, het juiste besluit te nemen. Het algoritme heeft dus niet het laatste woord, maar een medewerker.",
+        "5. Is een Privacy Impact Assessment uitgevoerd?": "Nee, omdat het bij aanvang van deze toepassing nog niet verplicht was om Privacy Impact Assessment uit te voeren",
+        "6. Is een Uthiek Assessment uitgevoerd?": "Nee, omdat we bij aanvang van deze toepassing nog geen Uthiek Assessments uitvoerden"
+      },
+      {
+        "1. Naam van het proces": "Hotspot aanpak",
+        "2. Omschrijving van het proces": "Het beschrijven  waar en wanneer delicten hebben plaats gevonden in de openbare ruimte",
+        "3. Wat is de rol van het algoritme of voorspellend model binnen het proces?": "Het algoritme plot beschrijvende data over delicten op de kaart  en geeft een beeld (informatie) van hotspot locaties in het recente verleden",
+        "4. Geeft het algoritme of voorspellend model informatie of neemt het zelfstandig een besluit?": "Het algoritme geeft informatie en dit stelt een medewerker in staat om, mede op basis hiervan, het juiste besluit te nemen. Het algoritme heeft dus niet het laatste woord, maar een medewerker.",
+        "5. Is een Privacy Impact Assessment uitgevoerd?": "Nee, omdat het bij aanvang van deze toepassing nog niet verplicht was om Privacy Impact Assessment uit te voeren",
+        "6. Is een Uthiek Assessment uitgevoerd?": "Nee, omdat we bij aanvang van deze toepassing nog geen Uthiek Assessments uitvoerden"
+      },
+      {
+        "1. Naam van het proces": "Risico-indicatoren drugspanden",
+        "2. Omschrijving van het proces": "Het verklaren welke kenmerken van panden vaak samenhangen met het vervaardigen van drugs",
+        "3. Wat is de rol van het algoritme of voorspellend model binnen het proces?": "Het algoritme combineert historische data mbt frauduleuze activiteiten met een bestand van pandkenmerken en geeft een voorzet (informatie) over de omvang en kenmerken van de groep panden met een hoog risico op het plaatsvinden van vervaardigen van drugs in elke buurt.",
+        "4. Geeft het algoritme of voorspellend model informatie of neemt het zelfstandig een besluit?": "Het algoritme geeft informatie en dit stelt een medewerker in staat om, mede op basis hiervan, het juiste besluit te nemen. Het algoritme heeft dus niet het laatste woord, maar een medewerker.",
+        "5. Is een Privacy Impact Assessment uitgevoerd?": "Nee, omdat het bij aanvang van deze toepassing nog niet verplicht was om Privacy Impact Assessment uit te voeren",
+        "6. Is een Uthiek Assessment uitgevoerd?": "Nee, omdat we bij aanvang van deze toepassing nog geen Uthiek Assessments uitvoerden"
+      },
+      {
+        "1. Naam van het proces": "Risico-indicatoren witwassen panden",
+        "2. Omschrijving van het proces": "Het verklaren welke kenmerken van panden vaak samenhangen met witwassen. Deze toepassing vindt plaats binnen de City Deal \"Zicht op Ondermijning\".",
+        "3. Wat is de rol van het algoritme of voorspellend model binnen het proces?": "Het algoritme combineert historische data mbt frauduleuze activiteiten met een bestand van pandkenmerken en geeft een voorzet (informatie) over de omvang en kenmerken van de groep panden met een hoog risico op het plaatsvinden van witwassen in elke buurt.",
+        "4. Geeft het algoritme of voorspellend model informatie of neemt het zelfstandig een besluit?": "Het algoritme geeft informatie en dit stelt een medewerker in staat om, mede op basis hiervan, het juiste besluit te nemen. Het algoritme heeft dus niet het laatste woord, maar een medewerker.",
+        "5. Is een Privacy Impact Assessment uitgevoerd?": "Ja, als onderdeel van de goedgekeurde privacyovereenkomst bij de Citydeal Ondermijning",
+        "6. Is een Uthiek Assessment uitgevoerd?": "Nee, omdat we bij aanvang van deze toepassing nog geen Uthiek Assessments uitvoerden"
+      },
+      {
+        "1. Naam van het proces": "Risico-indicatoren & voorspelmodel jonge aanwas in de drugscriminaliteit",
+        "2. Omschrijving van het proces": "Het verklaren welke indicatoren jongeren kwetsbaar maken om betrokken te raken in de drugscriminaliteit en het voorspellen in welke buurten veel kwetsbare jongeren wonen.  Deze toepassing vindt plaats binnen de City Deal \"Zicht op Ondermijning\".",
+        "3. Wat is de rol van het algoritme of voorspellend model binnen het proces?": "Het algoritme combineert historische data mbt jeugd en criminaliteit met een bestand van jongeren en geeft een voorzet (informatie) over de omvang en kenmerken van de groep kwetsbare jongeren in elke buurt.",
+        "4. Geeft het algoritme of voorspellend model informatie of neemt het zelfstandig een besluit?": "Het algoritme geeft informatie en dit stelt een medewerker in staat om, mede op basis hiervan, het juiste besluit te nemen. Het algoritme heeft dus niet het laatste woord, maar een medewerker.",
+        "5. Is een Privacy Impact Assessment uitgevoerd?": "Ja, als onderdeel van de goedgekeurde privacyovereenkomst bij de Citydeal Ondermijning",
+        "6. Is een Uthiek Assessment uitgevoerd?": "Nee, omdat we bij aanvang van deze toepassing nog geen Uthiek Assessments uitvoerden"
+      }
+    ],
+    "PBZ": [
+      {
+        "1. Naam van het proces": "Stemgerechtigden",
+        "2. Omschrijving van het proces": "Het bepalen welke bewoners stemgerechtigd zijn voor verkiezingen",
+        "3. Wat is de rol van het algoritme of voorspellend model binnen het proces?": "Het algoritme combineert criteria aan een bestand van bewoners en geeft een informatie over bij welke bewoners wel en niet stemgerechtigd zijn voor verkiezingen",
+        "4. Geeft het algoritme of voorspellend model informatie of neemt het zelfstandig een besluit?": "Het algoritme geeft informatie en dit stelt een medewerker in staat om, mede op basis hiervan, het juiste besluit te nemen. Het algoritme heeft dus niet het laatste woord, maar een medewerker",
+        "5. Is een Privacy Impact Assessment uitgevoerd?": "Nee, omdat het bij aanvang van deze toepassing nog niet verplicht was om Privacy Impact Assessment uit te voeren",
+        "6. Is een Uthiek Assessment uitgevoerd?": "Nee, omdat we bij aanvang van deze toepassing nog geen Uthiek Assessments uitvoerden"
+      }
+    ],
+    "BSN": [
+      {
+        "1. Naam van het proces": "Geuatomatiseerd anonimiseren privacygevoelige informatie",
+        "2. Omschrijving van het proces": "Het geautomiseerd herkennen en anonimiseren van privacygevoelige informatie in documenten dmv software",
+        "3. Wat is de rol van het algoritme of voorspellend model binnen het proces?": "Het algoritme combineert criteria mbt privacygevoelige informatie met informatie in documenten en geeft een voorzet over welke informatie privacygevoelig is",
+        "4. Geeft het algoritme of voorspellend model informatie of neemt het zelfstandig een besluit?": "Het algoritme geeft informatie en dit stelt een medewerker in staat om, mede op basis hiervan, het juiste besluit te nemen. Het algoritme heeft dus niet het laatste woord, maar een medewerker",
+        "5. Is een Privacy Impact Assessment uitgevoerd?": "Nee, in overleg met de DISO en de FG is bepaald dat een Privacy Impact Assessment niet nodig is",
+        "6. Is een Uthiek Assessment uitgevoerd?": "Nee, in overleg met team Uthiek is bepaald dat een Uthiek Assessment niet nodig is"
+      }
+    ],
+    "RO": [
+      {
+        "1. Naam van het proces": "",
+        "2. Omschrijving van het proces": "",
+        "3. Wat is de rol van het algoritme of voorspellend model binnen het proces?": "",
+        "4. Geeft het algoritme of voorspellend model informatie of neemt het zelfstandig een besluit?": "",
+        "5. Is een Privacy Impact Assessment uitgevoerd?": "",
+        "6. Is een Uthiek Assessment uitgevoerd?": ""
+      },
+      {
+        "1. Naam van het proces": "Bij het organisatieonderdeel Raadsorganen worden GEEN algoritmen of voorspellende modellen toegepast die impact hebben op de stad",
+        "2. Omschrijving van het proces": "",
+        "3. Wat is de rol van het algoritme of voorspellend model binnen het proces?": "",
+        "4. Geeft het algoritme of voorspellend model informatie of neemt het zelfstandig een besluit?": "",
+        "5. Is een Privacy Impact Assessment uitgevoerd?": "",
+        "6. Is een Uthiek Assessment uitgevoerd?": ""
+      }
+    ]
+  }

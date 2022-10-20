@@ -2,7 +2,7 @@
 <script src="/js/microtemplating.js"></script>
 <script type="module">
     // GET SEARCH RESULTS FROM http://localhost:8000/den-haag.php
-    var rs = await fetch ('http://localhost:8000/den-haag.php').then(rs => rs.json()).then(rs => rs["Algoritmeregister GDH"]);
+    var rs = await fetch ('/testdata/den-haag.json').then(rs => rs.json()).then(rs => rs["Algoritmeregister GDH"]);
     document.getElementById("search-results").innerHTML = rs.map(item => tmpl("search_result_tmpl", {
         "name": item["Naam algoritme"],
         "organization": item["Organisatie"],

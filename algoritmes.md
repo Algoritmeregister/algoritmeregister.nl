@@ -1,7 +1,7 @@
 ---
 layout: algoritmes-zoeken
 ---
-<!-- <div class="cards">
+<div class="cards">
     <div class="card" style="background: #FFFFCC">
         <div style="float:right">
             <p style="font-size:0.85em">in ontwikkeling</p>
@@ -22,6 +22,4 @@ layout: algoritmes-zoeken
             /></a>
         </p>
     </div>
-</div> -->
-
-{% include algoritmes.html %}
+</div>

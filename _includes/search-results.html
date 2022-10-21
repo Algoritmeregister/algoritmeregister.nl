@@ -1,38 +1,79 @@
 <div class="search-results m-b6">
+	<script src="/js/microtemplating.js"></script>
+	<script type="module">
+		// GET SEARCH RESULTS FROM http://localhost:8000/den-haag.php
+		var rs = await fetch ('/testdata/den-haag.json').then(rs => rs.json()).then(rs => rs["Algoritmeregister GDH"]);
+		document.getElementById("search-results").innerHTML = rs.map(item => tmpl("search_result_tmpl", {
+			"name": item["Naam algoritme"],
+			"organization": item["Organisatie"],
+			"description_short": item["Korte omschrijving"],
+			"type": item["Soort algoritme"],
+			"domain": item["Dienstonderdeel"],
+			"status": item["Status"]
+		})).join("");
+		document.getElementById("numberOfSearchResults").innerHTML = rs.length;
+		//var algorithmTypes = [...new Set(rs.map(item => item["Soort algoritme"]))];
+	</script>
 	<div class="layout">
 		<div class="layout-1 layout-md-1-4">
 			<div class="color-bg-3 p-4">
 				<h2 class="text-h2">Filters</h2>
 				<div class="m-y4">
 					<h3 class="text-h4">Type algoritme</h3>
-					<p class="text-body">Neuraal netwerk <span class="color-2">(4)</span></p>
+					<p class="text-body">Rule based <span class="color-2">(0)</span></p>
+					<p class="text-body">Zelflerend <span class="color-2">(0)</span></p>
 				</div>
 				<div class="m-y4">
 					<h3 class="text-h4">Risico categorie</h3>
-					<p class="text-body">Hoog risico <span class="color-2">(12)</span></p>
-					<p class="text-body">Laag risico <span class="color-2">(2)</span></p>
+					<p class="text-body">Verboden <span class="color-2">(0)</span></p>
+					<p class="text-body">Hoog risico <span class="color-2">(0)</span></p>
+					<p class="text-body">Laag risico <span class="color-2">(0)</span></p>
+					<p class="text-body">Geen risico <span class="color-2">(0)</span></p>
 				</div>
 				<div class="m-y4">
 					<h3 class="text-h4">Thema</h3>
-					<p class="text-body">Verkeer <span class="color-2">(22)</span></p>
-					<p class="text-body">Inkomen <span class="color-2">(12)</span></p>
-					<p class="text-body">Belastingen <span class="color-2">(3)</span></p>
+					<p class="text-body">Verkeer <span class="color-2">(0)</span></p>
+					<p class="text-body">Inkomen <span class="color-2">(0)</span></p>
+					<p class="text-body">Belastingen <span class="color-2">(0)</span></p>
+					<p><a href="" class="text-body color-2">meer ...</a></p>
 				</div>
 				<div class="m-y4">
 					<h3 class="text-h4">Organisatie</h3>
-					<p class="text-body">Gemeente Den Haag <span class="color-2">(22)</span></p>
-					<p class="text-body">Min BZK <span class="color-2">(12)</span></p>
-					<p class="text-body">Gemeente Amsterdam <span class="color-2">(3)</span></p>
+					<p class="text-body">Gemeente Den Haag <span class="color-2">(0)</span></p>
+					<!-- <p class="text-body">Min BZK <span class="color-2">(12)</span></p> -->
+					<!-- <p class="text-body">Gemeente Amsterdam <span class="color-2">(3)</span></p> -->
 					<p><a href="" class="text-body color-2">meer ...</a></p>
 				</div>
 			</div>
 		</div>
 		<div class="layout-1 layout-md-3-4">
-			<h1 class="text-h1 m-b4 m-t3">101 Zoekresultaten</h1>
-			{% include real-search-results.html %}
-			{% comment %}
-			{% include placeholder-search-results.html %}
-			{% endcomment %}
+			<h1 class="text-h1 m-b4 m-t3"><span id="numberOfSearchResults"></span> Zoekresultaten</h1>
+			<div id="search-results"></div>
+			<script type="text/html" id="search_result_tmpl">
+				<div class="m-y4">
+					<h2 class="text-h2 m-b2 color-2"><%=name%></h2>
+					<p class="text-body m-b4"><%=description_short%></p>
+					<div class="u-flex">
+						<div class="m-r5">
+							<h4 class="text-h4">Organisatie</h4>
+							<p class="text-body"><%=organization%></p>
+						</div>
+						<div class="m-r5">
+							<h4 class="text-h4">Thema</h4>
+							<p class="text-body"><%=domain%></p>
+						</div>
+						<div class="m-r5">
+							<h4 class="text-h4">Type</h4>
+							<p class="text-body"><%=type%></p>
+						</div>
+						<div class="m-r5">
+							<h4 class="text-h4">Status</h4>
+							<p class="text-body"><%=status%></p>
+						</div>
+					</div>
+				</div>
+				<hr class="hr">
+			</script>
 			<div class="m-y4">
 				<div class="u-flex">
 					<a href="#" class="u-display-inline-block m-r2 text-h4 color-1 color-bg-2 p-1 u-border-radius">1</a>

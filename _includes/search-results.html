@@ -36,31 +36,35 @@
 		<div class="layout-1 layout-md-3-4">
 			<h1 class="text-h1 m-b4 m-t3"><span id="numberOfSearchResults"></span> Zoekresultaten</h1>
 			<div id="search-results"></div>
+
 			<script type="text/html" id="search_result_tmpl">
-				<div class="m-y4">
-					<h2 class="text-h2 m-b2 color-2"><%=name%></h2>
-					<p class="text-body m-b4"><%=description_short%></p>
-					<div class="u-flex">
-						<div class="m-r5">
-							<h4 class="text-h4">Organisatie</h4>
-							<p class="text-body"><%=organization%></p>
-						</div>
-						<div class="m-r5">
-							<h4 class="text-h4">Thema</h4>
-							<p class="text-body"><%=domain%></p>
-						</div>
-						<div class="m-r5">
-							<h4 class="text-h4">Type</h4>
-							<p class="text-body"><%=type%></p>
-						</div>
-						<div class="m-r5">
-							<h4 class="text-h4">Status</h4>
-							<p class="text-body"><%=status%></p>
+				<div data-search-text="<%=name.toLowerCase()%> <%=organization.toLowerCase()%>">
+					<div class="m-y4">
+						<h2 class="text-h2 m-b2 color-2"><%=name%></h2>
+						<p class="text-body m-b4"><%=description_short%></p>
+						<div class="u-flex">
+							<div class="m-r5">
+								<h4 class="text-h4">Organisatie</h4>
+								<p class="text-body"><%=organization%></p>
+							</div>
+							<div class="m-r5">
+								<h4 class="text-h4">Thema</h4>
+								<p class="text-body"><%=domain%></p>
+							</div>
+							<div class="m-r5">
+								<h4 class="text-h4">Type</h4>
+								<p class="text-body"><%=type%></p>
+							</div>
+							<div class="m-r5">
+								<h4 class="text-h4">Status</h4>
+								<p class="text-body"><%=status%></p>
+							</div>
 						</div>
 					</div>
+					<hr class="hr">
 				</div>
-				<hr class="hr">
 			</script>
+
 			<div class="m-y4">
 				<div class="u-flex">
 					<a href="#" class="u-display-inline-block m-r2 text-h4 color-1 color-bg-2 p-1 u-border-radius">1</a>

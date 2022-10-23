@@ -1,19 +1,6 @@
 <div class="search-results m-b6">
 	<script src="/js/microtemplating.js"></script>
-	<script type="module">
-		// GET SEARCH RESULTS FROM http://localhost:8000/den-haag.php
-		var rs = await fetch ('/testdata/den-haag.json').then(rs => rs.json()).then(rs => rs["Algoritmeregister GDH"]);
-		document.getElementById("search-results").innerHTML = rs.map(item => tmpl("search_result_tmpl", {
-			"name": item["Naam algoritme"],
-			"organization": item["Organisatie"],
-			"description_short": item["Korte omschrijving"],
-			"type": item["Soort algoritme"],
-			"domain": item["Dienstonderdeel"],
-			"status": item["Status"]
-		})).join("");
-		document.getElementById("numberOfSearchResults").innerHTML = rs.length;
-		//var algorithmTypes = [...new Set(rs.map(item => item["Soort algoritme"]))];
-	</script>
+	<script type="module" src="/js/testdataloader.js"></script>
 	<div class="layout">
 		<div class="layout-1 layout-md-1-4">
 			<div class="color-bg-3 p-4">

@@ -8,7 +8,7 @@ export default function () {
                 return {
                     "name": item["1. Naam van het proces"],
                     "organization": "Gemeente Utrecht",
-                    "description_short": `Het doel van het algorithme is ${item["2. Omschrijving van het proces"]}. ${item["4. Geeft het algoritme of voorspellend model informatie of neemt het zelfstandig een besluit?"]}`,
+                    "description_short": `Het doel van het algoritme is ${item["2. Omschrijving van het proces"]}. ${item["4. Geeft het algoritme of voorspellend model informatie of neemt het zelfstandig een besluit?"]}`,
                     "type": "niet beschikbaar",
                     "domain": i,
                     "status": "niet beschikbaar"

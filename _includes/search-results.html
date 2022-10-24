@@ -41,7 +41,7 @@
 			<script type="text/html" id="search_result_tmpl">
 				<div data-search-text="<%=name.toLowerCase()%> <%=organization.toLowerCase()%> <%=description_short%>">
 					<div class="m-y4">
-						<h2 class="text-h2 m-b2 color-2"><%=name%></h2>
+						<h2 class="text-h2 m-b2 color-2"><% if (typeof website === 'string') { %><a href="<%=website%>" target="_blank"><%=name%> <img src="/img/external-link.svg"></a><% } else { %><%=name%><% } %></h2>
 						<p class="text-body m-b4"><%=description_short%></p>
 						<div class="u-flex">
 							<div class="m-r5">

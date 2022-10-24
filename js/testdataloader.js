@@ -1,6 +1,6 @@
 import DataLoaderDenHaag from './modules/DataLoaderDenHaag.mjs';
 import DataLoaderUtrecht from './modules/DataLoaderUtrecht.mjs';
-import DataLoaderStandardV03 from './modules/DataLoaderStandardV03.mjs';
+import DataLoaderStandardV03 from './modules/DataLoaderStandard-v0.3.mjs';
 import Algoritmeregister from './modules/Algoritmeregister.mjs';
 
 

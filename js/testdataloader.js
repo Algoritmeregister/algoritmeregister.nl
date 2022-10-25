@@ -15,6 +15,9 @@ algoritmeregister.addData(await dataLoaderUtrecht.getData());
 var dataLoaderAmsterdam = new DataLoaderStandardV03();
 algoritmeregister.addData(await dataLoaderAmsterdam.getData('/testdata/amsterdam.json'));
 
+var dataLoaderAmsterdam = new DataLoaderStandardV03();
+algoritmeregister.addData(await dataLoaderAmsterdam.getData('/testdata/rotterdam.json'));
+
 document.getElementById("search-bar").onkeyup = function () { algoritmeregister.filter(this.value); };
 
 algoritmeregister.render();

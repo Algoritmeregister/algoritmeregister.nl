@@ -5,7 +5,7 @@
   tool: spreadsheet
   url: https://data.overheid.nl/en/dataset/algoritme-register
   json: /testdata/den-haag.json
-  standard: DenHaag
+  schema: DenHaag
   status: in gebruik
 - title: Algoritmeregister Rotterdam
   organisation: Gemeente Rotterdam
@@ -14,7 +14,7 @@
   tool: algemene cms
   url: https://www.rotterdam.nl/algoritmeregister
   json: /testdata/rotterdam.json
-  standard: Algoritmeregister-v0.3
+  schema: https://standaard.algoritmeregister.org/schemas/registration-v0.3.schema.json
   status: in gebruik
 - title: Algoritmeregister Rotterdam
   organisation: Gemeente Rotterdam
@@ -30,7 +30,7 @@
   tool: saidot.ai
   url: https://algoritmeregister.amsterdam.nl
   json: /testdata/amsterdam.json
-  standard: Algoritmeregister-v0.3
+  schema: https://standaard.algoritmeregister.org/schemas/registration-v0.3.schema.json
   status: in gebruik
 - title: Algoritmeregister Utrecht
   organisation: Gemeente Utrecht
@@ -39,7 +39,7 @@
   tool: spreadsheet
   url: https://data.overheid.nl/en/dataset/utrecht-algoritmeregister-utrecht
   json: /testdata/utrecht.json
-  standard: Utrecht
+  schema: Utrecht
   status: in gebruik
 - title: Algoritmeregister Noord-Brabant
   organisation: Provincie Noord-Brabant

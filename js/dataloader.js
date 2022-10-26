@@ -4,7 +4,7 @@ import DataLoaderStandardV03 from './modules/DataLoaderStandard-v0.3.mjs';
 import Algoritmeregister from './modules/Algoritmeregister.mjs';
 
 var dataLoaders = {
-    "Algoritmeregister-v0.3": DataLoaderStandardV03,
+    "https://standaard.algoritmeregister.org/schemas/registration-v0.3.schema.json": DataLoaderStandardV03,
     "DenHaag": DataLoaderDenHaag,
     "Utrecht": DataLoaderUtrecht
 };
@@ -14,8 +14,8 @@ var algoritmeregisters = await fetch ('/data/algoritmeregisters.json').then(rs =
 var algoritmeregisterApp = new Algoritmeregister();
 
 for (var i in algoritmeregisters) {
-    if (algoritmeregisters[i].standard) {
-        var dataLoader = new (dataLoaders[algoritmeregisters[i].standard])();
+    if (algoritmeregisters[i].schema) {
+        var dataLoader = new (dataLoaders[algoritmeregisters[i].schema])();
         algoritmeregisterApp.addData(await dataLoader.getData(algoritmeregisters[i].json));
     }
 }

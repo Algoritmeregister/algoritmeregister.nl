@@ -1,6 +1,6 @@
 <div class="search-results m-b6">
 	<script src="/js/microtemplating.js"></script>
-	<script type="module" src="/js/testdataloader.js"></script>
+	<script type="module" src="/js/dataloader.js"></script>
 	<div class="layout">
 		<div class="layout-1 layout-md-1-4">
 			<div class="color-bg-3 p-4">
@@ -34,6 +34,7 @@
 				</div>
 			</div>
 		</div>
+
 		<div class="layout-1 layout-md-3-4">
 			<h1 class="text-h1 m-b4 m-t3"><span id="numberOfSearchResults">Inladen</span> geregistreerde algoritmes</h1>
 			<div id="search-results"></div>
@@ -41,7 +42,7 @@
 			<script type="text/html" id="search_result_tmpl">
 				<div data-search-text="<%=name.toLowerCase()%> <%=organization.toLowerCase()%> <%=description_short%>">
 					<div class="m-y4">
-						<h2 class="text-h2 m-b2 color-2"><% if (typeof website === 'string') { %><a href="<%=website%>" target="_blank"><%=name%> <img src="/img/external-link.svg"></a><% } else { %><%=name%><% } %></h2>
+						<h2 class="text-h2 m-b2 color-2" onclick="return; /*FIXME pop up details disabled*/ <%=`document.getElementById('algorithm-details').style.display = 'block'`%>"><% if (typeof website === 'string') { %><a href="<%=website%>" target="_blank"><%=name%> <img src="/img/external-link.svg"></a><% } else { %><%=name%><% } %></h2>
 						<p class="text-body m-b4"><%=description_short%></p>
 						<div class="u-flex">
 							<div class="m-r5">
@@ -73,6 +74,37 @@
 					<a href="#" class="u-display-inline-block m-r2 text-h4 color-0 color-bg-1 p-1 u-border-radius">3</a>
 				</div>
 			</div>
+		</div>
+
+		<div id="algorithm-details" class="layout-1 layout-md-1-4" style="display: none; background: #eee; position: fixed; right: 0; top: 0; height: 100%">
+			<div class="text-h1" style="float: right; cursor: pointer" onclick="this.parentElement.style.display = 'none'">✖</div>
+			<h1 class="text-h1 m-b4 m-t3">Details</h1>
+			<h2 class="text-h2 m-b2 color-2">Naam registratie</h2>
+			<p class="text-body m-b4">Omschrijving van de registratie</p>
+			<script type="text/html" id="algorithm_details_tmpl">
+				<div class="m-y4">
+					<h2 class="text-h2 m-b2 color-2"><% if (typeof website === 'string') { %><a href="<%=website%>" target="_blank"><%=name%> <img src="/img/external-link.svg"></a><% } else { %><%=name%><% } %></h2>
+					<p class="text-body m-b4"><%=description_short%></p>
+					<div class="u-flex">
+						<div class="m-r5">
+							<h4 class="text-h4">Organisatie</h4>
+							<p class="text-body"><%=organization%></p>
+						</div>
+						<div class="m-r5">
+							<h4 class="text-h4">Thema</h4>
+							<p class="text-body"><%=domain%></p>
+						</div>
+						<div class="m-r5">
+							<h4 class="text-h4">Type</h4>
+							<p class="text-body"><%=type%></p>
+						</div>
+						<div class="m-r5">
+							<h4 class="text-h4">Status</h4>
+							<p class="text-body"><%=status%></p>
+						</div>
+					</div>
+				</div>
+			</script>
 		</div>
 	</div>
 </div>

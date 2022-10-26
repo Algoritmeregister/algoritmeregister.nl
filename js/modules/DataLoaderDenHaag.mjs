@@ -14,9 +14,9 @@ export default function () {
         });
     }
 
-    async function getData() {
+    async function getData(sourceUrl) {
         return data? data:
-            data = transform(await fetch ('/testdata/den-haag.json').then(rs => rs.json()).then(rs => rs["Algoritmeregister GDH"]));
+            data = transform(await fetch (sourceUrl).then(rs => rs.json()).then(rs => rs["Algoritmeregister GDH"]));
     }
 
     return {

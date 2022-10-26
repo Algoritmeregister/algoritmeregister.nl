@@ -18,9 +18,9 @@ export default function () {
         return data;
     }
 
-    async function getData() {
+    async function getData(sourceUrl) {
         return data ? data:
-            data = transform(await fetch ('/testdata/utrecht.json').then(rs => rs.json()));
+            data = transform(await fetch (sourceUrl).then(rs => rs.json()));
     }
 
     return {

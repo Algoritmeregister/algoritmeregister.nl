@@ -1,0 +1,14 @@
+---
+---
+{
+    "algoritmeregisters": {
+{% assign regs = site.data.algoritmeregisters | sort: 'title' %}
+    {% for reg in regs %}
+            "{{ reg.title }}": {
+                {% for attr in reg %}
+                "{{ attr[0] }}": "{{ attr[1] }}"{% if forloop.last == false %},{% endif %}
+                {% endfor %}
+            }{% if forloop.last == false %},{% endif %}
+    {% endfor %}
+    }
+}

@@ -3,21 +3,23 @@ import DataLoaderUtrecht from './modules/DataLoaderUtrecht.mjs';
 import DataLoaderStandardV03 from './modules/DataLoaderStandard-v0.3.mjs';
 import Algoritmeregister from './modules/Algoritmeregister.mjs';
 
+var dataLoaders = {
+    "Algoritmeregister-v0.3": DataLoaderStandardV03,
+    "DenHaag": DataLoaderDenHaag,
+    "Utrecht": DataLoaderUtrecht
+};
 
-var algoritmeregister = new Algoritmeregister();
+var algoritmeregisters = await fetch ('/data/algoritmeregisters.json').then(rs => rs.json()).then(rs => rs["algoritmeregisters"]);
 
-var dataLoaderDenHaag = new DataLoaderDenHaag();
-algoritmeregister.addData(await dataLoaderDenHaag.getData());
+var algoritmeregisterApp = new Algoritmeregister();
 
-var dataLoaderUtrecht = new DataLoaderUtrecht();
-algoritmeregister.addData(await dataLoaderUtrecht.getData());
+for (var i in algoritmeregisters) {
+    if (algoritmeregisters[i].standard) {
+        var dataLoader = new (dataLoaders[algoritmeregisters[i].standard])();
+        algoritmeregisterApp.addData(await dataLoader.getData(algoritmeregisters[i].json));
+    }
+}
 
-var dataLoaderAmsterdam = new DataLoaderStandardV03();
-algoritmeregister.addData(await dataLoaderAmsterdam.getData('/testdata/amsterdam.json'));
+document.getElementById("search-bar").onkeyup = function () { algoritmeregisterApp.filter(this.value); };
 
-var dataLoaderAmsterdam = new DataLoaderStandardV03();
-algoritmeregister.addData(await dataLoaderAmsterdam.getData('/testdata/rotterdam.json'));
-
-document.getElementById("search-bar").onkeyup = function () { algoritmeregister.filter(this.value); };
-
-algoritmeregister.render();
+algoritmeregisterApp.render();

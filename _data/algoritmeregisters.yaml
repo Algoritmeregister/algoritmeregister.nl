@@ -61,6 +61,8 @@
   type: website
   tool: algemene cms
   url: https://www.rvig.nl/over-rvig/algoritmeregister
+  json: /testdata/rvig.json
+  schema: RvIG
   status: in ontwikkeling
 - title: Algoritmeregister Noord-Holland
   organisation: Provincie Noord-Holland

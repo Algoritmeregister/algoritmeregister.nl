@@ -84,4 +84,6 @@
   type: website
   tool: algeme cms
   url: https://www.uwv.nl/overuwv/algoritmes-bij-uwv/
+  json: /testdata/uwv.json
+  schema: UWV
   status: in gebruik

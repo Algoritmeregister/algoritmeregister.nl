@@ -1,0 +1,22 @@
+{
+    "algoritmeregister": [
+      {
+        "Naam": "Risicoscan Verblijf Buiten Nederland",
+        "Organisatie": "UWV",
+        "Omschrijving": "De risicoscan Verblijf Buiten Nederland laat UWV-medewerkers weten welke klanten tijdens hun WW-uitkering in het buitenland zijn. En zich misschien niet houden aan de regels die voor een WW-uitkering gelden. ",
+        "URL": "https://www.uwv.nl/overuwv/algoritmes-bij-uwv/risicoscan-verblijf-buiten-nederland.aspx"
+      },
+      {
+        "Naam": "Klantapplicatie WW",
+        "Organisatie": "UWV",
+        "Omschrijving": "Met de Klantapplicatie WW kunnen mensen die werkloos zijn of binnenkort hun baan verliezen gemakkelijk en snel een WW-uitkering aanvragen via Mijn UWV.",
+        "URL": "https://www.uwv.nl/overuwv/algoritmes-bij-uwv/klantapplicatie-ww.aspx"
+      },
+      {
+        "Naam": "Claim Beoordelings- en Borgingssysteem (CBBS)",
+        "Organisatie": "UWV",
+        "Omschrijving": "U kunt door ziekte of een handicap minder of niet werken. UWV beoordeelt dan of u (gedeeltelijk) arbeidsongeschikt bent. Het Claim Beoordelings- en Borgingssysteem (CBBS) helpt hierbij.",
+        "URL": "https://www.uwv.nl/overuwv/algoritmes-bij-uwv/claim-beoordelings-en-borgingssysteem-cbbs.aspx"
+      }
+    ]
+  }

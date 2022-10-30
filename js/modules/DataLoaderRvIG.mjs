@@ -9,6 +9,7 @@ export default function () {
                 "description_short": item["Beschrijving van de inzet van het algoritme"] || item["Lange omschrijving"],
                 "type": item["Type"],
                 "domain": item["Verantwoordelijke voor het gebruik van algoritme"],
+                "website": item["URL"],
                 "status": item["Status"]
             }
         });

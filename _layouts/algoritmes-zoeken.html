@@ -10,8 +10,14 @@
 
     {% include content.html %}
 
-    {% include search-bar.html %}
-    {% include search-results.html %}
+    <div id="details-page" style="display: none">
+      {% include details.html %}
+    </div>
+
+    <div id="search-page" style="display: none">
+      {% include search-bar.html %}
+      {% include search-results.html %}
+    </div>
 
     {% include footer.html %}
   </body>

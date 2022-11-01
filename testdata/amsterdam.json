@@ -11,7 +11,8 @@
         "risk_category": "niet beschikbaar",
         "type": "niet beschikbaar",
         "status": "niet beschikbaar",
-        "decision_making_process": null
+        "decision_making_process": null,
+        "id": "d7d791ee-bf30-4d5a-b18e-91d5ca92249b"
       },
       {
         "name": "Vroeg Eropaf",
@@ -24,7 +25,8 @@
         "risk_category": "niet beschikbaar",
         "type": "niet beschikbaar",
         "status": "niet beschikbaar",
-        "decision_making_process": null
+        "decision_making_process": null,
+        "id": "41cddaee-40dc-4afb-a462-ad4c6dcb3c08"
       },
       {
         "name": "Handhaving Illegale…",
@@ -37,7 +39,8 @@
         "risk_category": "niet beschikbaar",
         "type": "niet beschikbaar",
         "status": "niet beschikbaar",
-        "decision_making_process": null
+        "decision_making_process": null,
+        "id": "cc9a6e1d-2b8d-4a1d-956a-78332cfb5380"
       },
       {
         "name": "Meldingen openbare ruimte",
@@ -50,7 +53,8 @@
         "risk_category": "niet beschikbaar",
         "type": "niet beschikbaar",
         "status": "niet beschikbaar",
-        "decision_making_process": null
+        "decision_making_process": null,
+        "id": "7b157658-7c31-430f-bd34-f26561e18706"
       },
       {
         "name": "Parkeercontrole",
@@ -63,7 +67,8 @@
         "risk_category": "niet beschikbaar",
         "type": "niet beschikbaar",
         "status": "niet beschikbaar",
-        "decision_making_process": null
+        "decision_making_process": null,
+        "id": "2ca720e1-72c5-4273-aad9-4dc6c46d947c"
       },
       {
         "name": "Public Eye",
@@ -76,7 +81,8 @@
         "risk_category": "niet beschikbaar",
         "type": "niet beschikbaar",
         "status": "niet beschikbaar",
-        "decision_making_process": null
+        "decision_making_process": null,
+        "id": "863fbf82-0a59-4a80-8778-eb54ef8bcc89"
       }
     ]
   }

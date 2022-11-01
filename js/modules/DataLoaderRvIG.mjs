@@ -10,7 +10,8 @@ export default function () {
                 "type": item["Type"],
                 "domain": item["Verantwoordelijke voor het gebruik van algoritme"],
                 "website": item["URL"],
-                "status": item["Status"]
+                "status": item["Status"],
+                "id": item["id"]
             }
         });
     }

@@ -11,7 +11,8 @@
       "risk_category": "niet beschikbaar",
       "type": "niet beschikbaar",
       "status": "niet beschikbaar",
-      "decision_making_process": null
+      "decision_making_process": null,
+      "id": "07ad6fd5-a31d-4caf-b1a1-fb4f19308e46"
     },
     {
       "name": "RAM & WAT-kaart",
@@ -24,7 +25,8 @@
       "risk_category": "niet beschikbaar",
       "type": "niet beschikbaar",
       "status": "niet beschikbaar",
-      "decision_making_process": null
+      "decision_making_process": null,
+      "id": "aced46b8-2e68-4ab7-8c77-904895e9f675"
     },
     {
       "name": "SpotRotterdam",
@@ -37,7 +39,8 @@
       "risk_category": "niet beschikbaar",
       "type": "niet beschikbaar",
       "status": "niet beschikbaar",
-      "decision_making_process": null
+      "decision_making_process": null,
+      "id": "5168e5a1-8f57-4a8b-aabd-6c2f5334ba23"
     },
     {
       "name": "Uitkeringsrechtmatigheid",
@@ -50,7 +53,8 @@
       "risk_category": "niet beschikbaar",
       "type": "niet beschikbaar",
       "status": "niet beschikbaar",
-      "decision_making_process": null
+      "decision_making_process": null,
+      "id": "d7d791ee-bf30-4d5a-b18e-91d5ca92249b"
     }
   ]
 }

@@ -9,7 +9,8 @@ export default function () {
                 "description_short": item["Korte omschrijving"],
                 "type": item["Soort algoritme"],
                 "domain": item["Dienstonderdeel"],
-                "status": item["Status"]
+                "status": item["Status"],
+                "id": item["id"]
             }
         });
     }

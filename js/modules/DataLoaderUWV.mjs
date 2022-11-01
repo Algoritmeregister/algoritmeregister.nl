@@ -10,7 +10,8 @@ export default function () {
                 "type": "niet beschikbaar",
                 "domain": "niet beschikbaar",
                 "website": item["URL"],
-                "status": "niet beschikbaar"
+                "status": "niet beschikbaar",
+                "id": item["id"]
             }
         });
     }

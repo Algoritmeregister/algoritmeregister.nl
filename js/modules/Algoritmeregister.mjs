@@ -6,10 +6,17 @@ export default function () {
     }
 
     function render() {
-        document.getElementById("search-results").innerHTML = data.map(item => tmpl("search_result_tmpl", item)).join("");
-        document.getElementById("numberOfSearchResults").innerHTML = data.length;
-        //var algorithmTypes = [...new Set(data.map(item => item["type"]))];
-        //console.log(algorithmTypes); // FIXME TO-DO
+        var uuid = document.URL.split("/").pop();
+        if(uuid.length === 36) { // FIXME uuid length, replace with pregmatch
+            var item = data.find(item => item.id === uuid);
+            document.getElementById("details-page").style.display = "block";
+        } else {
+            document.getElementById("search-page").style.display = "block";
+            document.getElementById("search-results").innerHTML = data.map(item => tmpl("search_result_tmpl", item)).join("");
+            document.getElementById("numberOfSearchResults").innerHTML = data.length;
+            //var algorithmTypes = [...new Set(data.map(item => item["type"]))];
+            //console.log(algorithmTypes); // FIXME TO-DO
+        }
     }
 
     function filter(str) {

@@ -10,6 +10,7 @@ export default function () {
         if(uuid.length === 36) { // FIXME uuid length, replace with pregmatch
             var item = data.find(item => item.id === uuid);
             document.getElementById("details-page").style.display = "block";
+            document.getElementById("details").innerHTML = tmpl("details_tmpl", item);
         } else {
             document.getElementById("search-page").style.display = "block";
             document.getElementById("search-results").innerHTML = data.map(item => tmpl("search_result_tmpl", item)).join("");

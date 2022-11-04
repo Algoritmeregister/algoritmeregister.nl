@@ -7,6 +7,7 @@
   json: /testdata/den-haag.json
   schema: DenHaag
   status: in gebruik
+  include: true
 - title: Algoritmeregister Rotterdam
   organisation: Gemeente Rotterdam
   description: Welkom op het algoritmeregister. Via deze pagina geeft gemeente Rotterdam u inzicht in algoritmes die de gemeente gebruikt bij het efficiënt uitvoeren van haar werkzaamheden.
@@ -16,13 +17,16 @@
   json: /testdata/rotterdam.json
   schema: https://standaard.algoritmeregister.org/schemas/registration-v0.3.schema.json
   status: in gebruik
+  include: true
 - title: Algoritmeregister Rotterdam
   organisation: Gemeente Rotterdam
-  description: 
+  description: Het algoritmeregister is een overzicht van de algoritmes die de gemeente Rotterdam grbruikt bij gemeentelijke dienstverlening. Per algoritme vind u naast algemene informatie over de bedoeling en werking van het algoritme, ook de technische informatie.
   type: website
   tool: Mendix
-  url: 
-  status: in ontwikkeling
+  url: https://algoritmeregister.rotterdam.nl/
+  json: /testdata/rotterdam.json
+  schema: Rotterdam
+  status: in gebruik
 - title: Algoritmeregister Amsterdam
   organisation: Gemeente Amsterdam
   description: Het algoritmeregister is een overzicht van de algoritmes die de gemeente Amsterdam gebruikt bij gemeentelijke dienstverlening.
@@ -32,6 +36,7 @@
   json: /testdata/amsterdam.json
   schema: https://standaard.algoritmeregister.org/schemas/registration-v0.3.schema.json
   status: in gebruik
+  include: true
 - title: Algoritmeregister Utrecht
   organisation: Gemeente Utrecht
   description: Dit is het Utrechtse algoritmeregister. Hier vindt u een overzicht van de Utrechtse digitaliseringstrajecten waarbij een algoritme en/of voorspellend model een rol vervult.
@@ -41,6 +46,7 @@
   json: /testdata/utrecht.json
   schema: Utrecht
   status: in gebruik
+  include: true
 - title: Algoritmeregister Noord-Brabant
   organisation: Provincie Noord-Brabant
   description: 
@@ -64,10 +70,11 @@
   json: /testdata/rvig.json
   schema: RvIG
   status: in ontwikkeling
+  include: true
 - title: Algoritmeregister Noord-Holland
   organisation: Provincie Noord-Holland
   description: 
-  type:
+  type: databestand
   tool:
   url: 
   status: in ontwikkeling
@@ -87,3 +94,4 @@
   json: /testdata/uwv.json
   schema: UWV
   status: in gebruik
+  include: true

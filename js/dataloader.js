@@ -18,7 +18,7 @@ var algoritmeregisters = await fetch ('/data/algoritmeregisters.json').then(rs =
 var algoritmeregisterApp = new Algoritmeregister();
 
 for (var i in algoritmeregisters) {
-    if (algoritmeregisters[i].schema) {
+    if (algoritmeregisters[i].include) {
         var dataLoader = new (dataLoaders[algoritmeregisters[i].schema])();
         algoritmeregisterApp.addData(await dataLoader.getData(algoritmeregisters[i].json));
     }

@@ -16,3 +16,12 @@ De bij ons bekende algoritmeregisters nemen wij op in het <a href="/registers">o
 
 ## We ontwikkelen instrumenten
 Ter ondersteuning van de mensen die algoritmes in de praktijk inzetten ontwikkelen we handreikingen, beheertools, kaders, inkoopvoorwaarden en meer.
+
+# Veelgestelde vragen
+
+## Wat is een algoritme?
+Een algoritme is een set van regels en instructies die een computer geautomatiseerd volgt bij het
+maken van berekeningen om een probleem op te lossen of een vraag te beantwoorden.
+
+## Worden alle algoritmen opgenomen in het register?
+Nee, alleen _algoritmen met impact_ op burgers of bedrijven moeten worden opgenomen in het register.

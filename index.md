@@ -1,61 +1,18 @@
 ---
-layout: algoritmeregisters
+layout: default
+title: Algoritmeregister
+description: Samen werken aan verantwoorde en transparante inzet van algoritmische toepassingen door overheden.
 ---
-<div class="search">
-    <p>Filter op naam:&emsp;<input type="text" placeholder="Voer zoektekst in" id="filter-general-input"></p>
-    <script>
-    let filterGeneralInput = document.getElementById("filter-general-input");
-    filterGeneralInput.oninput = function (event) {
-        document.getElementById("filter-status-select").selectedIndex = 0; //reset other filter
-        let str = event.target.value;
-        Array.prototype.forEach.call(document.getElementsByClassName("card"), function (el) {
-        el.style.display = el.dataset.filterGeneral.toLowerCase().includes(str.toLowerCase()) ?
-            "block" :
-            "none";
-        });
-    }
-    </script>
-    <p>Filter op status:&emsp;<select id="filter-status-select"><option></option><option>in gebruik</option><option>in ontwikkeling</option></select></p>
-    <script>
-    let filterStatusSelect = document.getElementById("filter-status-select");
-    filterStatusSelect.onchange = function (event) {
-        document.getElementById("filter-general-input").value = ''; //reset other filter
-        let str = event.target.value;
-        Array.prototype.forEach.call(document.getElementsByClassName("card"), function (el) {
-        el.style.display = el.dataset.filterStatus.toLowerCase().includes(str.toLowerCase()) ?
-            "block" :
-            "none";
-        });
-    }
-    </script>
-</div>
+Overheden zijn zich meer en meer bewust van de impact van algoritmes op publieke waarden. Met het programma “Algoritmeregister” ondersteunt het Ministerie van Binnenlandse Zaken en Koninkrijksrelaties overheden bij het in de praktijk brengen en doorontwikkelen van manieren en instrumenten voor verantwoorde en transparante inzet van algoritmische toepassingen.
 
-<div class="cards">
-    {% assign regs = site.data.algoritmeregisters | sort: 'title' %}
-    {% for reg in regs %}
-    <div class="card" data-filter-general="{{reg.title}} {{reg.organisation}}" data-filter-status="{{reg.status}}">
-    <div style="float:right">
-        <p style="font-size:0.85em">{{ reg.status }}</p>
-    </div>
-    <p style="margin-bottom: 0">{{ reg.organisation }}</p>
-    <h2>
-        {{ reg.title }}&emsp;<span class="type">{{ reg.type }}</span>
-    </h2>
-    {% if reg.description %}
-    <p style="font-style: italic; color: #777">
-        "{{ reg.description }}"
-    </p>
-    {% endif %}
-    {% if reg.url %}
-    <p>
-        <a target="_blank" href="{{ reg.url }}"
-        >{{ reg.url }}&nbsp;<img
-            style="vertical-align: baseline"
-            src="/img/external-link.svg"
-            alt="externe link indicator"
-        /></a>
-    </p>
-    {% endif %}
-    </div>
-    {% endfor %}
-</div>
+## We ondersteunen overheden bij het opzetten van een algoritmeregister
+Als organisaties die al bezig zijn met een algoritmeregister vormen we de werkgroep. Tweewekelijks bespreken we onze plannen en ontwikkelingen met elkaar, mogelijke verbeteringen van de standaard, en ideeën voor onderzoek en instrumenten, zoals een beheertool.
+
+## We organiseren deling van kennis en ervaring
+Ondersteunende documenten zoals handreikingen voor governance, bezwaarprocedures, inkoopvoorwaarden en impact assessments delen we centraal. Daarover organiseren we maandelijkse bijeenkomsten voor organisaties die ook willen beginnen. Zo groeit de werkgroep en werken we aan een breed gedragen standaard.
+
+## We werken aan een nationaal algoritmeregister
+De bij ons bekende algoritmeregisters nemen wij op in het <a href="/registers">overzicht van registers</a>. Alle registraties in deze registers maken wij centraal vindbaar en doorzoekbaar in het <a href="/algoritmes">nationale algoritmeregister</a>.
+
+## We ontwikkelen instrumenten
+Ter ondersteuning van de mensen die algoritmes in de praktijk inzetten ontwikkelen we handreikingen, beheertools, kaders, inkoopvoorwaarden en meer.

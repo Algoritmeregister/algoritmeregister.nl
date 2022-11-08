@@ -6,9 +6,15 @@
   <body>
     {% include header.html %}
 
-    {% include tab-nav.html %}
+    {% include nav.html %}
 
+    {% comment %}
+    {% include tab-nav.html %}
+    {% endcomment %}
+
+    {% comment %}
     {% include content.html %}
+    {% endcomment %}
     
     <script src="/js/microtemplating.js"></script>
     <script type="module" src="/js/dataloader.js"></script>

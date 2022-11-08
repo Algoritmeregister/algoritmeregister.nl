@@ -1,44 +1,13 @@
 <div class="search-results m-b6">
 	<div class="layout">
-		<div class="layout-1 layout-md-1-4">
-			<div class="color-bg-3 p-4">
-				<h2 class="text-h2">Filters</h2>
-				<div class="m-y4">
-					<h3 class="text-h4">Type algoritme</h3>
-					<p class="text-body">Rule based <span class="color-2">(0)</span></p>
-					<p class="text-body">Zelflerend <span class="color-2">(0)</span></p>
-				</div>
-				<div class="m-y4">
-					<h3 class="text-h4">Risico categorie</h3>
-					<p class="text-body">Verboden <span class="color-2">(0)</span></p>
-					<p class="text-body">Hoog risico <span class="color-2">(0)</span></p>
-					<p class="text-body">Laag risico <span class="color-2">(0)</span></p>
-					<p class="text-body">Geen risico <span class="color-2">(0)</span></p>
-				</div>
-				<div class="m-y4">
-					<h3 class="text-h4">Thema</h3>
-					<p class="text-body">Verkeer <span class="color-2">(0)</span></p>
-					<p class="text-body">Inkomen <span class="color-2">(0)</span></p>
-					<p class="text-body">Belastingen <span class="color-2">(0)</span></p>
-					<p><a href="" class="text-body color-2">meer ...</a></p>
-				</div>
-				<div class="m-y4">
-					<h3 class="text-h4">Organisatie</h3>
-					<p class="text-body">Gemeente Den Haag <span class="color-2">(0)</span></p>
-					<p class="text-body">Gemeente Utrecht <span class="color-2">(0)</span></p>
-					<p class="text-body">Gemeente Amsterdam <span class="color-2">(0)</span></p>
-					<!-- <p class="text-body">Min BZK <span class="color-2">(12)</span></p> -->
-					<p><a href="" class="text-body color-2">meer ...</a></p>
-				</div>
-			</div>
-		</div>
+		{% include filters.html %}
 
 		<div class="layout-1 layout-md-3-4">
 			<h1 class="text-h1 m-b4 m-t3"><span id="numberOfSearchResults">Inladen</span> geregistreerde algoritmes</h1>
 			<div id="search-results"></div>
 
 			<script type="text/html" id="search_result_tmpl">
-				<div data-search-text="<%=name.toLowerCase()%> <%=organization.toLowerCase()%> <%=description_short%>">
+				<div data-search-text="<%=name.toLowerCase()%> <%=organization.toLowerCase()%> <%=description_short%> type:<%=type.toLowerCase()%>">
 					<div class="m-y4">
 						<h2 class="text-h2 m-b2 color-2"><a href="/algoritmes?/<%=id%>"><%=name%> <img src="/img/external-link.svg"></a></h2>
 						<p class="text-body m-b4"><%=description_short%></p>

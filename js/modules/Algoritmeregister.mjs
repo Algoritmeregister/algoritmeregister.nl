@@ -7,7 +7,7 @@ export default function () {
 
     function render() {
         var uuid = document.URL.split("/").pop();
-        if(uuid.length === 36) { // FIXME uuid length, replace with pregmatch
+        if(uuid.match(/^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i)) {
             var item = data.find(item => item.id === uuid);
             document.getElementById("details-page").style.display = "block";
             document.getElementById("details").innerHTML = tmpl("details_tmpl", item);

@@ -18,10 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Overzicht van algoritmeregisters
+title: Algoritmeregister van de Nederlandse Overheid
 email: info@algoritmeregister.org
 description: >- # this means to ignore newlines until "baseurl:"
-  Nederlandse overheden houden de inzet van algoritmische toepassingen bij in hun algoritmeregister. Op deze pagina vind je een overzicht van alle bekende algoritmeregisters van Nederlandse (semi-)publieke organisaties.
+  Zoek naar algoritmes bij Nederlandse Overheidsorganisaties.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: nl_algoreg

@@ -13,7 +13,7 @@ export default function () {
             document.getElementById("details").innerHTML = tmpl("details_tmpl", item);
         } else {
             document.getElementById("search-page").style.display = "block";
-            document.getElementById("search-results").innerHTML = data.map(item => tmpl("search_result_tmpl", item)).join("");
+            document.getElementById("search-results").innerHTML = data.map(item => tmpl("result_tmpl", item)).join("");
             document.getElementById("numberOfSearchResults").innerHTML = data.length;
             //var algorithmTypes = [...new Set(data.map(item => item["type"]))];
             //console.log(algorithmTypes); // FIXME TO-DO
@@ -30,7 +30,7 @@ export default function () {
                 matches++;
             }
         });
-        document.getElementById("numberOfSearchResults").innerHTML = matches;
+        document.getElementById("results-header").innerHTML = `${matches} resultaten voor zoekterm "${str}"`;
     }
 
     return {

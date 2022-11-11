@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    <div id="details-page" style="display: none">
+      {% include header.html crumble=true searchbar=false %}
+      {% include details.html %}
+    </div>
+
+    <div id="search-page" style="display: none">
+      {% include header.html crumble=false searchbar=true %}
+      <section class="ar-teaser-block">
+        <div class="layout">
+          <div class="layout-1 layout-md-1-4">
+            {% include filters.html %}
+          </div>
+          <div class="layout-1 layout-md-3-4">
+            {% include results.html %}
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+    <script src="/js/microtemplating.js"></script>
+    <script type="module" src="/js/dataloader.js"></script>
+  </body>
+</html>

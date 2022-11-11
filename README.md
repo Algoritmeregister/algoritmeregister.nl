@@ -1,3 +1,3 @@
-## Overzicht van algoritmeregisters
+## Algoritmeregister van de Nederlandse Overheid (dummy versie)
 
-Nederlandse overheden houden de inzet van algoritmische toepassingen bij in hun algoritmeregister. Op deze pagina vind je een overzicht van alle bekende algoritmeregisters van Nederlandse (semi-)publieke organisaties.
+Zoek naar algoritmes bij Nederlandse Overheidsorganisaties.

@@ -1,8 +1,8 @@
-import DataLoaderDenHaag from './modules/DataLoaderDenHaag.mjs';
-import DataLoaderUtrecht from './modules/DataLoaderUtrecht.mjs';
-import DataLoaderStandardV03 from './modules/DataLoaderStandard-v0.3.mjs';
-import DataLoaderRvIG from './modules/DataLoaderRvIG.mjs';
-import DataLoaderUWV from './modules/DataLoaderUWV.mjs';
+import DataLoaderDenHaag from './modules/DataLoaders/DataLoaderDenHaag.mjs';
+import DataLoaderUtrecht from './modules/DataLoaders/DataLoaderUtrecht.mjs';
+import DataLoaderStandardV03 from './modules/DataLoaders/DataLoaderStandard-v0.3.mjs';
+import DataLoaderRvIG from './modules/DataLoaders/DataLoaderRvIG.mjs';
+import DataLoaderUWV from './modules/DataLoaders/DataLoaderUWV.mjs';
 import Algoritmeregister from './modules/Algoritmeregister.mjs';
 
 var dataLoaders = {
@@ -24,6 +24,8 @@ for (var i in algoritmeregisters) {
     }
 }
 
-document.getElementById("search-bar").onkeyup = function () { algoritmeregisterApp.filter(this.value); };
+document.getElementById("search-bar").onkeyup = function () {
+    algoritmeregisterApp.filter(this.value);
+};
 
 algoritmeregisterApp.render();

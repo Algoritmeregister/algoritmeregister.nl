@@ -7,10 +7,10 @@ export default function () {
                 "name": item["Naam"],
                 "organization": item["Organisatie"],
                 "description_short": item["Omschrijving"],
-                "type": "niet beschikbaar",
-                "domain": "niet beschikbaar",
+                "type": "Onbekend",
+                "domain": "Onbekend",
                 "website": item["URL"],
-                "status": "niet beschikbaar",
+                "status": "Onbekend",
                 "id": item["id"]
             }
         });

@@ -1,22 +1,32 @@
-<header class="flex space-between p4" style="justify-content: center; height: 150px">
-  <a href="/" class="flex align-center">
-    <img
-      src="//www.algoritmeregister.org/img/algoritmeregister-logo.svg"
-      class="w-main-logo"
-      alt="algoritmeregister logo"
-    />
-  </a>
-  <!-- <nav class="flex align-center">
-    <a href="/" class="text-nav mr4">home</a>
-    <a href="https://www.algoritmeregister.org" class="text-nav mr4"
-      >meer informatie</a
-    >
-    <a href="https://www.github.com/Algoritmeregister">
-      <img
-        src="//www.algoritmeregister.org/img/github-repo-link.svg"
-        class="display-block"
-        alt="github logo"
-      />
-    </a>
-  </nav> -->
+<header class="ovnl-header m-b4">
+  <div class="layout p-y3">
+    <div class="layout-1">
+      <div class="u-flex u-space-between u-align-center">
+        <a href="/">
+          <img src="/img/logo-overheid-nl.svg" class="ovnl-header-logo" />
+          <p class="ovnl-header-subtitle">Algoritmes in de Overheid</p>
+        </a>
+        <div class="u-md-display-none">
+          <a href="#" class="burger u-border-radius">
+            <div class="burger-line-wrap m-r2">
+              <div class="burger-line"></div>
+              <div class="burger-line"></div>
+              <div class="burger-line"></div>
+            </div>
+            <span class="burger-text color-6">Menu</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% include nav.html %}
+
+  {% if include.crumble %}
+    {% include crumble.html %}
+  {% endif %}
+
+  {% if include.searchbar %}
+    {% include searchbar.html %}
+  {% endif %}
 </header>

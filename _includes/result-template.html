@@ -1,0 +1,38 @@
+<script type="text/html" id="result_tmpl">
+  <div class="ar-teaser" data-search-text="<%=name.toLowerCase()%> <%=organization.toLowerCase()%> <%=description_short%> type:<%=type.toLowerCase()%>">
+    <div class="m-y4">
+      <h2 class="text-h2 m-b2 color-2">
+        <a href="/algoritmes?/<%=id%>"><%=name%></a>
+      </h2>
+      <p class="text-body m-b4">
+        <%=description_short%>
+      </p>
+      <div class="u-flex">
+        <div class="m-r5">
+          <h4 class="text-h4">Organisatie</h4>
+          <p class="text-body"><%=organization%></p>
+        </div>
+        <% if (typeof(department) !== "undefined") { %>
+        <div class="m-r5">
+          <h4 class="text-h4">Afdeling</h4>
+          <p class="text-body"><%=department%></p>
+        </div>
+        <% } else { %>
+        <div class="m-r5">
+          <h4 class="text-h4">Thema</h4>
+          <p class="text-body"><%=domain%></p><!-- FIXME domain is not v0.2 -->
+        </div>
+        <% } %>
+        <div class="m-r5">
+          <h4 class="text-h4">Type</h4>
+          <p class="text-body"><%=type%></p>
+        </div>
+        <div class="m-r5">
+          <h4 class="text-h4">Status</h4>
+          <p class="text-body"><%=status%></p>
+        </div>
+      </div>
+    </div>
+    <hr class="hr" />
+  </div>
+</script>

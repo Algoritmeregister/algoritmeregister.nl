@@ -9,4 +9,4 @@ document.getElementById("search-bar").onkeyup = function () {
 };
 
 algoritmeregisterApp.addData(await dataLoader.getData("/testdata/launch.json"));
-algoritmeregisterApp.render();
+algoritmeregisterApp.render(await dataLoader.getSchema("/testdata/launch.schema.json"));

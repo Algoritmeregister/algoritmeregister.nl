@@ -5,12 +5,12 @@ export default function () {
         data = data.concat(inputData);
     }
 
-    function render() {
+    function render(schema) {
         var uuid = document.URL.split("/#").pop();
         if(uuid.match(/^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i)) {
             var item = data.find(item => item.id === uuid);
             document.getElementById("details-page").style.display = "block";
-            document.getElementById("details").innerHTML = tmpl("details_tmpl", item);
+            document.getElementById("details").innerHTML = tmpl("details_tmpl", { item: item, schema: schema });
         } else {
             document.getElementById("search-page").style.display = "block";
             document.getElementById("search-results").innerHTML = data.map(item => tmpl("result_tmpl", item)).join("");

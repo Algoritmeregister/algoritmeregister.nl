@@ -12,17 +12,14 @@
           <h4 class="text-h4">Organisatie</h4>
           <p class="text-body"><%=organization%></p>
         </div>
-        <% if (typeof(department) !== "undefined") { %>
         <div class="m-r5">
           <h4 class="text-h4">Afdeling</h4>
           <p class="text-body"><%=department%></p>
         </div>
-        <% } else { %>
         <div class="m-r5">
           <h4 class="text-h4">Thema</h4>
-          <p class="text-body"><%=domain%></p><!-- FIXME domain is not v0.2 -->
+          <p class="text-body"><%=category%></p>
         </div>
-        <% } %>
         <div class="m-r5">
           <h4 class="text-h4">Type</h4>
           <p class="text-body"><%=type%></p>

@@ -1,8 +1,8 @@
 export default function () {
     var data = [];
 
-    function addData(orgData) {
-        data = data.concat(orgData);
+    function addData(inputData) {
+        data = data.concat(inputData);
     }
 
     function render() {
@@ -14,7 +14,7 @@ export default function () {
         } else {
             document.getElementById("search-page").style.display = "block";
             document.getElementById("search-results").innerHTML = data.map(item => tmpl("result_tmpl", item)).join("");
-            document.getElementById("numberOfSearchResults").innerHTML = data.length;
+            document.getElementById("results-header").innerHTML = `${data.length} resultaten gevonden`;
             //var algorithmTypes = [...new Set(data.map(item => item["type"]))];
             //console.log(algorithmTypes); // FIXME TO-DO
         }

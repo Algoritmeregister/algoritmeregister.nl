@@ -8,7 +8,9 @@
             width: 100%;
         }
     }
-    
+    .btn {
+      cursor: pointer;
+    }
 </style>
 <section class="ovnl-jumbo-search">
   <div class="layout">
@@ -20,8 +22,9 @@
             <p class="ovnl-jumbo-search-subtitle p-y4">
               {{ site.description }}
             </p>
-            <form>
+            <form action="/algoritmes">
               <input
+                name="q"
                 class="ovnl-jumbo-search-input m-b3"
                 type="text"
                 placeholder="Zoek op organisatie, titel of omschrijving"

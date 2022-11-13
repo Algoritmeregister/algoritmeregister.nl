@@ -2,8 +2,12 @@
   <div class="layout">
     <div class="layout-1 p-y2">
       <span class="text-body-small color-6">U bent hier:</span>
-      <a href="#" class="text-body-small color-6">Home</a> /
+      <!-- <a href="#" class="text-body-small color-6">Home</a> / -->
       <a href="/" class="text-body-small color-6">{{ site.title }}</a>
+      {% if page.permalink == "algoritmes/details/" %}
+      / <a href="/algoritmes" class="text-body-small color-6">Algoritmes</a>
+      / <a href="#" class="text-body-small color-6">Details</a>
+      {% endif %}
     </div>
   </div>
 </div>

@@ -23,9 +23,15 @@ export default function (schema) {
             //var algorithmTypes = [...new Set(data.map(item => item["type"]))];
             //console.log(algorithmTypes); // FIXME TO-DO
         }
-        var q = (new URLSearchParams(window.location.search)).get('q') || localStorage.getItem('q');
-        if (q) {
+        var q;
+        var params = (new URLSearchParams(window.location.search));
+        if (params.has('q')) {
+            q = params.get('q');
             localStorage.setItem('q', q);
+        } else {
+            q = localStorage.getItem('q');
+        }
+        if (q) {
             document.getElementById("search-bar").value = q;
             filter(q);
         }

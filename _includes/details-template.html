@@ -63,100 +63,32 @@
             </div>
           </div>
 
-          <div
-            class="color-bg-3 u-border-radius m-y4 p-y3 p-x4 u-flex u-space-between u-align-center"
-          >
-            <a href="#" class="text-h3 color-6">Alle informatie</a>
-            <img
-              src="https://tydelyk.nl/algoritmeregister/img/arrow-right.png"
-              style="height: 16px; opacity: 0.5; transform: rotate(90deg)"
-            />
-          </div>
+          <% var category = ""; for (var property in schema.properties) {
+            if (category !== schema.properties[property].category) {
+              category = schema.properties[property].category; %>
 
-          <div class="p-b4 p-x4">
-            <div class="markup-zone">
-              <% for (var attr in item) { %>
-              <h4><%=schema.properties[attr].name%></h4>
-              <p><%=item[attr]%></p>
-              <hr />
-              <% } %>
+            <div
+              class="color-bg-3 u-border-radius m-y4 p-y3 p-x4 u-flex u-space-between u-align-center"
+            >
+              <a href="#" class="text-h3 color-6"><%=category%></a>
+              <img
+                src="https://tydelyk.nl/algoritmeregister/img/arrow-right.png"
+                style="height: 16px; opacity: 0.5; transform: rotate(90deg)"
+              />
             </div>
-          </div>
 
-          <div
-            class="color-bg-5 u-border-radius m-y5 p-4 u-flex u-space-between u-align-center"
-          >
-            <a href="#" class="text-h4">Inzet</a>
-            <img
-              src="https://tydelyk.nl/algoritmeregister/img/arrow-right.png"
-              style="height: 16px; opacity: 0.5; transform: rotate(90deg)"
-            />
-          </div>
+            <% } %>
 
-          <div class="p-b4 p-x4">
-            <div class="markup-zone">
-              <h4>Doel</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco.
-              </p>
-              <h4>Impact</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco.
-              </p>
-              <h4>Proportionaliteit</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco.
-              </p>
-              <h4>Besluitvormingsproces</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco.
-              </p>
-              <h4>Documentatie</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco.
-              </p>
+            <div class="p-b4 p-x4">
+              <div class="markup-zone">
+                <h4><%=schema.properties[property].name%></h4>
+                <p><%=item[property]%></p>
+                <hr />
+              </div>
             </div>
-          </div>
+            
+          <% } %>
 
-          <div
-            class="color-bg-5 u-border-radius m-y5 p-4 u-flex u-space-between u-align-center"
-          >
-            <a href="#" class="text-h4">Toepassing</a>
-            <img
-              src="https://tydelyk.nl/algoritmeregister/img/arrow-right.png"
-              style="height: 16px; opacity: 0.5"
-            />
-          </div>
-
-          <div
-            class="color-bg-5 u-border-radius m-y5 p-4 u-flex u-space-between u-align-center"
-          >
-            <a href="#" class="text-h4">Toezicht</a>
-            <img
-              src="https://tydelyk.nl/algoritmeregister/img/arrow-right.png"
-              style="height: 16px; opacity: 0.5"
-            />
-          </div>
-
-          <div
-            class="color-bg-5 u-border-radius m-y5 p-4 u-flex u-space-between u-align-center"
-          >
-            <a href="#" class="text-h4">Juridisch</a>
-            <img
-              src="https://tydelyk.nl/algoritmeregister/img/arrow-right.png"
-              style="height: 16px; opacity: 0.5"
-            />
-          </div>
         </div>
       </div>
     </div>

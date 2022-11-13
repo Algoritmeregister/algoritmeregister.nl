@@ -1,11 +1,16 @@
-export default function () {
+export default function (schema) {
     var data = [];
+
+    document.getElementById("search-bar").onkeyup = function () {
+        filter(this.value);
+    };
 
     function addData(inputData) {
         data = data.concat(inputData);
+        render();
     }
 
-    function render(schema) {
+    function render() {
         var uuid = document.URL.split("/#").pop();
         if(uuid.match(/^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i)) {
             var item = data.find(item => item.id === uuid);
@@ -17,6 +22,12 @@ export default function () {
             document.getElementById("results-header").innerHTML = `${data.length} resultaten gevonden`;
             //var algorithmTypes = [...new Set(data.map(item => item["type"]))];
             //console.log(algorithmTypes); // FIXME TO-DO
+        }
+        var q = (new URLSearchParams(window.location.search)).get('q') || localStorage.getItem('q');
+        if (q) {
+            localStorage.setItem('q', q);
+            document.getElementById("search-bar").value = q;
+            filter(q);
         }
     }
 
@@ -34,9 +45,7 @@ export default function () {
     }
 
     return {
-        addData,
-        render,
-        filter
+        addData
     }
 
 }

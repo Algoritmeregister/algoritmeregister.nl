@@ -53,7 +53,7 @@ input[type=text] {
   padding: 12px 12px;
   border-radius: 4px;
   font-family: "RO Sans Bold", "sans-serif";
-  font-size: 14px;
+  font-size: 18px;
   line-height: 24px;
 }
 @media screen and (min-width: 992px) {
@@ -86,7 +86,7 @@ input[type=text] {
 .burger-text {
   flex: 1;
   font-family: "RO Sans Bold", "sans-serif";
-  font-size: 14px;
+  font-size: 18px;
   line-height: 24px;
   font-size: 18px;
 }
@@ -488,7 +488,7 @@ input[type=text] {
   font-family: "RO Sans Bold", "sans-serif";
   font-size: 24px;
   line-height: 32px;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 @media screen and (min-width: 992px) {
   .markup-zone h2 {
@@ -500,7 +500,7 @@ input[type=text] {
   font-family: "RO Sans Bold", "sans-serif";
   font-size: 18px;
   line-height: 26px;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 @media screen and (min-width: 992px) {
   .markup-zone h3 {
@@ -510,19 +510,18 @@ input[type=text] {
 }
 .markup-zone h4 {
   font-family: "RO Sans Bold", "sans-serif";
-  font-size: 16px;
+  font-size: 17px;
   line-height: 24px;
-  margin-bottom: 12px;
 }
 @media screen and (min-width: 992px) {
   .markup-zone h4 {
-    font-size: 16px;
+    font-size: 17px;
     line-height: 24px;
   }
 }
 .markup-zone p {
   font-family: "RO Sans Regular", "sans-serif";
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
   margin-bottom: 24px;
 }
@@ -537,7 +536,7 @@ input[type=text] {
 }
 .markup-zone li {
   font-family: "RO Sans Regular", "sans-serif";
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
   margin-bottom: 8px;
 }
@@ -546,6 +545,11 @@ input[type=text] {
     font-size: 18px;
     line-height: 1.5;
   }
+}
+.markup-zone hr {
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
 }
 .markup-zone ul li {
   display: list-item;
@@ -597,9 +601,9 @@ input[type=text] {
   border: 2px solid #154273;
   border-radius: 4px;
   width: 100%;
-  padding: 16px 50px;
+  padding: 16px 0 16px 50px;
   font-family: "RO Sans Regular", "sans-serif";
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
   background-image: url(https://tydelyk.nl/algoritmeregister/img/icon-search-blue.svg);
   background-position: 16px 16px;
@@ -615,6 +619,14 @@ input[type=text] {
   font-family: "RO Sans Italic", "sans-serif";
   color: #333;
 }
+.ovnl-jumbo-search-btn {
+  width: 100%;
+}
+@media screen and (min-width: 992px) {
+  .ovnl-jumbo-search-btn {
+    width: auto;
+  }
+}
 .ovnl-search-input {
   border: 1px solid #e6e6e6;
   border-radius: 4px;
@@ -623,7 +635,7 @@ input[type=text] {
   width: 100%;
   padding: 8px 50px;
   font-family: "RO Sans Regular", "sans-serif";
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
   background-image: url(https://tydelyk.nl/algoritmeregister/img/icon-search-blue.svg);
   background-position: 16px 8px;
@@ -805,7 +817,7 @@ input[type=text] {
 }
 .ro-navbar-input {
   font-family: "RO Sans Regular", "sans-serif";
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
   height: 48px;
   line-height: 48px;
@@ -828,7 +840,7 @@ input[type=text] {
 }
 .ro-navbar-input::placeholder {
   font-family: "RO Sans Regular", "sans-serif";
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
 }
 @media screen and (min-width: 992px) {
@@ -846,7 +858,7 @@ input[type=text] {
 }
 .text-body {
   font-family: "RO Sans Regular", "sans-serif";
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
 }
 @media screen and (min-width: 992px) {
@@ -862,7 +874,7 @@ input[type=text] {
 }
 .text-h1 {
   font-family: "RO Sans Bold", "sans-serif";
-  font-size: 24px;
+  font-size: 28px;
   line-height: 32px;
 }
 @media screen and (min-width: 992px) {
@@ -895,12 +907,12 @@ input[type=text] {
 }
 .text-h4 {
   font-family: "RO Sans Bold", "sans-serif";
-  font-size: 16px;
+  font-size: 17px;
   line-height: 24px;
 }
 @media screen and (min-width: 992px) {
   .text-h4 {
-    font-size: 16px;
+    font-size: 17px;
     line-height: 24px;
   }
 }
@@ -917,7 +929,7 @@ input[type=text] {
 }
 .text-button {
   font-family: "RO Sans Bold", "sans-serif";
-  font-size: 14px;
+  font-size: 18px;
   line-height: 24px;
 }
 @media screen and (min-width: 992px) {
@@ -1028,6 +1040,9 @@ input[type=text] {
 }
 .u-text-center {
   text-align: center;
+}
+.u-text-underline {
+  text-decoration: underline;
 }
 .u-border-radius {
   border-radius: 4px;

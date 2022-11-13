@@ -1,27 +1,11 @@
-<style>
-    .ovnl-jumbo-search-wrapper {
-        padding: 18px;
-    }
-    /* replace default with 100%, min-width: 992 rule */
-    @media screen and (max-width: 991.9px) {
-        .ovnl-jumbo-search .btn {
-            width: 100%;
-        }
-    }
-    .btn {
-      cursor: pointer;
-    }
-</style>
 <section class="ovnl-jumbo-search">
   <div class="layout">
     <div class="layout-1">
       <div class="p-y6 color-bg-3 u-flex">
         <div class="m-auto u-text-center">
-          <div class="ovnl-jumbo-search-wrapper p-y4">
+          <div class="ovnl-jumbo-search-wrapper p-x3 p-y4">
             <h1 class="text-h1 color-6">{{ site.title }}</h1>
-            <p class="ovnl-jumbo-search-subtitle p-y4">
-              {{ site.description }}
-            </p>
+            <p class="ovnl-jumbo-search-subtitle p-y4">{{ site.description }}</p>
             <form action="/algoritmes">
               <input
                 name="q"
@@ -30,7 +14,7 @@
                 placeholder="Zoek op organisatie, titel of omschrijving"
               />
               <div class="u-flex u-justify-end">
-                <button class="btn u-display-block">Zoeken</button>
+                <button class="ovnl-jumbo-search-btn btn u-display-block">Zoeken</button>
               </div>
             </form>
           </div>

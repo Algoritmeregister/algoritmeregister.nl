@@ -1,5 +1,13 @@
 export default function (schema) {
     var data = [];
+    var information = {};
+
+    for (var property in schema.properties) {
+        information[schema.properties[property].category] = {};
+    }
+    for (var property in schema.properties) {
+        information[schema.properties[property].category][property] = schema.properties[property];
+    }
 
     document.getElementById("search-bar").onkeyup = function () {
         filter(this.value);
@@ -15,7 +23,15 @@ export default function (schema) {
         if(uuid.match(/^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i)) {
             var item = data.find(item => item.id === uuid);
             document.getElementById("details-page").style.display = "block";
-            document.getElementById("details").innerHTML = tmpl("details_tmpl", { item: item, schema: schema });
+            document.getElementById("details").innerHTML = tmpl("details_tmpl", { item: item, information: information });
+            [].forEach.call(document.getElementsByClassName("collapsible-section-header"), function (el) {
+                el.onclick = function () {
+                    var content = el.nextElementSibling;
+                    var isOpen = content.style.display === "none";
+                    content.style.display = isOpen ? "block" : "none";
+                    el.querySelector("img").style.transform = isOpen ? "rotate(90deg)" : "rotate(0)";
+                };
+            });
         } else {
             document.getElementById("search-page").style.display = "block";
             document.getElementById("search-results").innerHTML = data.map(item => tmpl("result_tmpl", item)).join("");

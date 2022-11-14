@@ -63,30 +63,38 @@
             </div>
           </div>
 
-          <% var category = ""; for (var property in schema.properties) {
-            if (category !== schema.properties[property].category) {
-              category = schema.properties[property].category; %>
+          <% for (var category in information) { %>
 
-            <div
-              class="color-bg-3 u-border-radius m-y4 p-y3 p-x4 u-flex u-space-between u-align-center"
-            >
-              <a href="#" class="text-h3 color-6"><%=category%></a>
-              <img
-                src="https://tydelyk.nl/algoritmeregister/img/arrow-right.png"
-                style="height: 16px; opacity: 0.5; transform: rotate(90deg)"
-              />
-            </div>
+            <div class="collapsible-section">
 
-            <% } %>
-
-            <div class="p-x4">
-              <div class="markup-zone">
-                <h4><%=schema.properties[property].name%></h4>
-                <p><%=item[property]%></p>
-                <hr />
+              <div
+                class="collapsible-section-header color-bg-3 u-border-radius m-y4 p-y3 p-x4 u-flex u-space-between u-align-center"
+              >
+                <a href="#" class="text-h3 color-6"><%=category%></a>
+                <img
+                  src="https://tydelyk.nl/algoritmeregister/img/arrow-right.png"
+                  style="height: 16px; opacity: 0.5; transform: rotate(90deg)"
+                />
               </div>
-            </div>
-            
+
+              <div class="collapsible-section-content">
+
+                <% for (var property in information[category]) { %>
+
+                <div class="p-x4">
+                  <div class="markup-zone">
+                    <h4><%=information[category][property].name%></h4>
+                    <p><%=item[property]%></p>
+                    <hr />
+                  </div>
+                </div>
+                
+                <% } %>
+
+              </div><!-- collapsible-section-content -->
+
+            </div><!-- collapsible-section -->
+
           <% } %>
 
         </div>

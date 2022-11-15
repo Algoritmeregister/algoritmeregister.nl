@@ -4,7 +4,7 @@ export default function () {
     function transform(data) {
         data.map(function (item) {
             for (var attr in item) {
-                item[attr] = item[attr] || "Informatie niet beschikbaar";
+                item[attr] = item[attr] || "Nog niet automatisch ingeladen";
             }
             return item;
         });

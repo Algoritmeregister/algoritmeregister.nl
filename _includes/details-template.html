@@ -82,13 +82,17 @@
 
                 <% for (var property in information[category]) { %>
 
-                <div class="p-x4">
-                  <div class="markup-zone">
-                    <h4><%=information[category][property].name%></h4>
-                    <p><%=item[property]%></p>
-                    <hr />
+                  <% if (item[property] !== "Nog niet automatisch ingeladen" || information[category][property].required) { %>
+
+                  <div class="p-x4">
+                    <div class="markup-zone">
+                      <h4><%=information[category][property].name%></h4>
+                      <p><%=item[property]%></p>
+                      <hr />
+                    </div>
                   </div>
-                </div>
+
+                  <% } %>
                 
                 <% } %>
 

@@ -1,291 +1,254 @@
-
 {
-    "$id": "https://standaard.algoritmeregister.org/schemas/registration-v0.2.nl.schema.json",
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https:\/\/www.algoritmeregister.nl\/testdata\/launch.schema.json",
+    "$schema": "https:\/\/json-schema.org\/draft\/2020-12\/schema",
     "title": "NL Standaard voor Registratie van Algoritmes en AI",
     "description": "Standaard voor de registratie van de inzet van modellen, algoritmes en AI in beleid en besluitvormingsprocessen in Nederlandse overheidsorganisaties.",
     "type": "object",
     "properties": {
-        
-            "name": {
-                "name": "Naam",
-				"category": "ALGEMENE INFORMATIE",
-				"type": "string",
-				"description": "Wat is de naam die gebruikt wordt om dit algoritme aan te duiden? Voorbeeld: 'WMO voorspelling Rotterdam' of 'Crowd-monitoring Enschede'.",
-				"required": true
-            },
-        
-            "organization": {
-                "name": "Organisatie",
-				"category": "ALGEMENE INFORMATIE",
-				"type": "string",
-				"description": "Wat is de volledige naam van de organisatie verantwoordelijk voor de inzet van het model, algoritme of AI? Voorbeeld: 'Gemeente Amsterdam' of 'Waterschap Limburg'.",
-				"required": true
-            },
-        
-            "department": {
-                "name": "Afdeling",
-				"category": "ALGEMENE INFORMATIE",
-				"type": "string",
-				"description": "Wat is de volledige naam van de afdeling of divisie verantwoordelijk voor de inzet van het model, algoritme of AI? Voorbeeld: 'Stadsdeel Segbroek' of 'Verkeer en Transport'.",
-				"required": true
-            },
-        
-            "description_short": {
-                "name": "Korte omschrijving",
-				"category": "ALGEMENE INFORMATIE",
-				"type": "string",
-				"description": "Geef een korte omschrijving van maximaal 150 karakters waarin hoog over omschreven wordt wat het doel is van het model, algoritme of AI. Voorbeeld: 'Algoritme dat bij stoplichten voorrang van verkeersmodaliteiten berekent op basis van wetgeving en lokale voorschriften.",
-				"required": true
-            },
-        
-            "type": {
-                "name": "Type algoritme",
-				"category": "ALGEMENE INFORMATIE",
-				"type": "string",
-				"description": "Geef aan of het model, algoritme of AI descriptief, diagnostisch, voorspellend of prescriptief is. Deze information kan gebruikt worden als risico-indicator.",
-				"required": false
-            },
-        
-            "category": {
-                "name": "Categorie",
-				"category": "ALGEMENE INFORMATIE",
-				"type": "string",
-				"description": "Geef zoekwoorden om zoeken te ondersteunen. Voorbeelden: 'verkeer', 'transport', 'sociale zekerheid', 'drukte-monitoring', 'gezichtsherkenning', 'camera-toezicht'.",
-				"required": false
-            },
-        
-            "website": {
-                "name": "URL van de website",
-				"category": "ALGEMENE INFORMATIE",
-				"type": "string",
-				"description": "Wat is de URL van de pagina waarom meer informatie te vinden is over het model, algoritme of AI en de inzet daarvan? Dit is interessant voor gebruikers die meer willen weten over de praktische inzet en technische details.",
-				"required": false
-            },
-        
-            "status": {
-                "name": "Status",
-				"category": "ALGEMENE INFORMATIE",
-				"type": "string",
-				"description": "Geef aan of het model, algoritme of AI in ontwikkeling is, in gebruik, of buiten gebruik.",
-				"required": false
-            },
-        
-            "goal": {
-                "name": "Doel",
-				"category": "INZET",
-				"type": "string",
-				"description": "Omschrijf de doelen waarvoor het model, algoritme of AI ontwikkeld is en hoe de inzet ervan bijdraagt aan het behalen van die doelen. Hieruit moet duidelijk blijken hoe en waarom deze specifieke technologie daar aan bijdraagt.",
-				"required": false
-            },
-        
-            "impact": {
-                "name": "Impact",
-				"category": "INZET",
-				"type": "string",
-				"description": "Omschrijf hoe burgers te maken krijgen met de effecten van het model, algoritme of AI. Onder welke omstandigheden gebeurt dit en wat zijn de verwachte consequenties daarvan voor het individu en/of de samenleving?",
-				"required": false
-            },
-        
-            "proportionality": {
-                "name": "Proportionaliteit",
-				"category": "INZET",
-				"type": "string",
-				"description": "Omschrijf waarom de inzet van het model, algoritme of AI redelijk gerechtvaardigd is. Hieruit moet blijken waarom de verwachte baten groter zijn dan de negatieve effecten en risico's.",
-				"required": false
-            },
-        
-            "decision_making_process": {
-                "name": "Besluitvormingsproces",
-				"category": "INZET",
-				"type": "string",
-				"description": "Binnen welk proces in de organisatie wordt het model, algoritme of AI ingezet? Dit moet linken aan concrete wetgeving, voorschriften of beleid zoals vastgelegd in publiek beschikbare bronnen.",
-				"required": false
-            },
-        
-            "documentation": {
-                "name": "Documentatie",
-				"category": "INZET",
-				"type": "string",
-				"description": "Wat is de URL naar aanvullende documentatie over dit specifieke gebruik van het model, algoritme of AI?",
-				"required": false
-            },
-        
-            "description": {
-                "name": "Lange omschrijving",
-				"category": "TOEPASSING",
-				"type": "string",
-				"description": "Geef een uitgebreide uitleg tussen de 500 en 10000 karakters lang van de manier van werken van het model, algoritme of AI. Dit moet alle relevante aspecten bevatten om te kunnen snappen hoe het model, algoritme of AI data verwerkt en een beslissing maakt of beinvloed.",
-				"required": false
-            },
-        
-            "application_url": {
-                "name": "URL van de applicatie",
-				"category": "TOEPASSING",
-				"type": "string",
-				"description": "Wat is de URL van de algoritmische applicatie of broncode. Voorbeelden zijn links naar Github, de Common Ground componentencatalogus, of de webpagina van de aanbieder?",
-				"required": false
-            },
-        
-            "publiccode": {
-                "name": "URL van publiccode.yml",
-				"category": "TOEPASSING",
-				"type": "string",
-				"description": "Wat is, indien beschikbaar, de URL van het publiccode.yml bestand?",
-				"required": false
-            },
-        
-            "MPRD": {
-                "name": "Koppelingen met basisregistraties",
-				"category": "TOEPASSING",
-				"type": "boolean",
-				"description": "Geef aan of er gebruik wordt gemaakt van koppeling met de BRP.",
-				"required": false
-            },
-        
-            "source_data": {
-                "name": "Brondata",
-				"category": "TOEPASSING",
-				"type": "string",
-				"description": "Geen een overzicht van de databronnen die gebruikt worden door of bij het maken of trainen van het model, algoritme of AI. Dit moet inzicht geven in met welk doel welke data is toegevoegd en mogelijke afhankelijkheden die daaruit voortvloeien.",
-				"required": false
-            },
-        
-            "methods_and_models": {
-                "name": "Methoden en modellen",
-				"category": "TOEPASSING",
-				"type": "string",
-				"description": "Geef aan welke standaard methoden of modellen het algoritme gebruikt. Voorbeelden: ROC-curve, confusion matrix.",
-				"required": false
-            },
-        
-            "monitoring": {
-                "name": "Monitoring",
-				"category": "TOEZICHT",
-				"type": "string",
-				"description": "Geef een overzicht van hoe de organisatie de inzet van het model, algoritme of AI monitort.",
-				"required": false
-            },
-        
-            "human_intervention": {
-                "name": "Menselijke tussenkomst",
-				"category": "TOEZICHT",
-				"type": "string",
-				"description": "Geef aan hoe de uitkomsten van het model, algoritme of AI door een mens gecontroleerd en bijgesteld worden. Dit moet inzicht geven in hoe menselijke interventie is verzekerd om misstanden te voorkomen.",
-				"required": false
-            },
-        
-            "risks": {
-                "name": "Risico's",
-				"category": "TOEZICHT",
-				"type": "string",
-				"description": "Geef een overzicht van de voorziene risico's. Dit mag ook verwijzen naar online documentatie. Aanbevelingen assesment instrumenten: ...",
-				"required": false
-            },
-        
-            "performance_standard": {
-                "name": "Prestatienormen",
-				"category": "TOEZICHT",
-				"type": "string",
-				"description": "Geef aan wat de verwachte prestaties van het model, algoritme of AI zijn en hoe die worden gemeten. Dit moet beschrijven welke criteria gebruikt worden en met welke regelmaat deze worden beoordeeld.",
-				"required": false
-            },
-        
-            "competent_authority": {
-                "name": "Bevoegde autoriteit",
-				"category": "JURIDISCH",
-				"type": "string",
-				"description": "Welke bevoegde autoriteit is verantwoordelijk voor de inzet van het model, algoritme of AI?",
-				"required": false
-            },
-        
-            "lawful_basis": {
-                "name": "Wettelijke grondslag",
-				"category": "JURIDISCH",
-				"type": "string",
-				"description": "Geef een verwijzing naar het formele besluit waarin de inzet van het model, algoritme of AI is goedgekeurd.",
-				"required": false
-            },
-        
-            "DPIA": {
-                "name": "Data protection impact assessment",
-				"category": "JURIDISCH",
-				"type": "boolean",
-				"description": "Is er een data protection impact assessment (DPIA) uitgevoerd?",
-				"required": false
-            },
-        
-            "DPIA_description": {
-                "name": "Omschrijving van de DPIA",
-				"category": "JURIDISCH",
-				"type": "string",
-				"description": "Geef een overzicht van de belangrijkste zaken die uit de data protection impact assessment (DPIA) naar voren kwamen. Dit moet beschrijven hoe discriminatie wordt tegengegaan bij gebruik van (proxies van) etniciteit, sexe, of postcode. Indien beschikbaar kan dit verwijzen naar de URL van de volledige DPIA documentatie.",
-				"required": false
-            },
-        
-            "objection_procedure": {
-                "name": "Bezwaarprocedure",
-				"category": "JURIDISCH",
-				"type": "string",
-				"description": "Omschrijf op welke manier burgers bezwaar kunnen maken tegen de uitkomsten van het model, algoritme of AI.",
-				"required": false
-            },
-        
-            "schema": {
-                "name": "Schema",
-				"category": "METADATA",
-				"type": "string",
-				"description": "Dit is het schema gebruikt voor deze registratie.",
-				"required": true
-            },
-        
-            "id": {
-                "name": "ID",
-				"category": "METADATA",
-				"type": "string",
-				"description": "Dit is de unieke identificatie (uuid) voor deze registratie.",
-				"required": true
-            },
-        
-            "url": {
-                "name": "URL",
-				"category": "METADATA",
-				"type": "string",
-				"description": "Dit is de URL voor deze registratie.",
-				"required": true
-            },
-        
-            "contact_email": {
-                "name": "E-mailadres van de contactpersoon",
-				"category": "METADATA",
-				"type": "string",
-				"description": "Dit is het e-mailadres van de organisatie of het contactpersoon voor deze registratie.",
-				"required": true
-            },
-        
-            "area": {
-                "name": "Geografisch gebied",
-				"category": "METADATA",
-				"type": "string",
-				"description": "Dit is het geografische gebied waarop deze registratie betrekking heeft.",
-				"required": false
-            },
-        
-            "lang": {
-                "name": "Taal",
-				"category": "METADATA",
-				"type": "string",
-				"description": "Dit is de taal waarin deze registratie is ingevoerd.",
-				"required": false
-            },
-        
-            "revision_date": {
-                "name": "Herzieningsdatum",
-				"category": "METADATA",
-				"type": "string",
-				"description": "Dit is de datum waarvoor deze registratie moet worden herzien.",
-				"required": true
-            }
-        
+        "name": {
+            "name": "Naam",
+            "category": "ALGEMENE INFORMATIE",
+            "type": "string",
+            "description": "naam die gebruikt wordt om dit algoritme aan te duiden",
+            "required": true
+        },
+        "organization": {
+            "name": "Organisatie",
+            "category": "ALGEMENE INFORMATIE",
+            "type": "string",
+            "description": "volledige naam van de organisatie verantwoordelijk voor de inzet van het model, algoritme of AI",
+            "required": true
+        },
+        "department": {
+            "name": "Afdeling",
+            "category": "ALGEMENE INFORMATIE",
+            "type": "string",
+            "description": "volledige naam van de afdeling of divisie verantwoordelijk voor de inzet van het model, algoritme of AI",
+            "required": true
+        },
+        "description_short": {
+            "name": "Korte omschrijving",
+            "category": "ALGEMENE INFORMATIE",
+            "type": "string",
+            "description": "korte omschrijving van maximaal 150 karakters waarin hoog over omschreven wordt wat de rol is van het model, algoritme of AI",
+            "required": true
+        },
+        "type": {
+            "name": "Type algoritme",
+            "category": "ALGEMENE INFORMATIE",
+            "type": "string",
+            "description": "is het model, algoritme of AI regelgebaseerd of (zelf)lerend",
+            "required": true
+        },
+        "category": {
+            "name": "Thema",
+            "category": "ALGEMENE INFORMATIE",
+            "type": "string",
+            "description": "domein waarin het model, algoritme of AI wordt ingezet",
+            "required": true
+        },
+        "website": {
+            "name": "Publiekspagina",
+            "category": "ALGEMENE INFORMATIE",
+            "type": "string",
+            "description": "URL van de publieke algoritmeregister pagina over de inzet van het model, algoritme of AI van de organisatie zelf",
+            "required": true
+        },
+        "status": {
+            "name": "Status",
+            "category": "ALGEMENE INFORMATIE",
+            "type": "string",
+            "description": "is het model, algoritme of AI in ontwikkeling, in gebruik of buiten gebruik",
+            "required": true
+        },
+        "goal": {
+            "name": "Doel",
+            "category": "INZET",
+            "type": "string",
+            "description": "omschrijving van de doelen waarvoor het model, algoritme of AI is ontwikkeld en\/of van hoe de inzet ervan bijdraagt aan het behalen van die doelen",
+            "required": true
+        },
+        "impact": {
+            "name": "Impact",
+            "category": "INZET",
+            "type": "string",
+            "description": "omschrijving van hoe burgers te maken krijgen met de effecten van het model, algoritme of AI en van onder welke omstandigheden dit gebeurt en wat de verwachte consequenties daarvan zijn voor het individu en\/of de samenleving",
+            "required": true
+        },
+        "proportionality": {
+            "name": "Proportionaliteit",
+            "category": "INZET",
+            "type": "string",
+            "description": "afweging van de voor- en nadelen van de inzet van het model, algoritme of AI en beschrijving van waarom dit redelijk gerechtvaardigd is",
+            "required": true
+        },
+        "decision_making_process": {
+            "name": "Proces",
+            "category": "INZET",
+            "type": "string",
+            "description": "naam van het bedrijfs- of besluitvormingsproces in de organisatie waarbinnen het model, algoritme of AI wordt ingezet",
+            "required": true
+        },
+        "documentation": {
+            "name": "Projectpagina",
+            "category": "INZET",
+            "type": "string",
+            "description": "URL van de projectpagina van de organisatie zelf over dit specifieke gebruik van het model, algoritme of AI",
+            "required": true
+        },
+        "description": {
+            "name": "Omschrijving",
+            "category": "TOEPASSING",
+            "type": "string",
+            "description": "uitgebreide uitleg tussen de 500 en 10000 karakters van hoe het model, algoritme of AI werkt",
+            "required": false
+        },
+        "application_url": {
+            "name": "URL van de applicatie",
+            "category": "TOEPASSING",
+            "type": "string",
+            "description": "URL van de applicatiepagina van de ontwikkelaar\/aanbieder van het model, algoritme of AI",
+            "required": false
+        },
+        "publiccode": {
+            "name": "URL van code base",
+            "category": "TOEPASSING",
+            "type": "string",
+            "description": "URL van de code base van het model, algoritme of AI",
+            "required": false
+        },
+        "MPRD": {
+            "name": "Koppelingen met basisregistraties",
+            "category": "TOEPASSING",
+            "type": "boolean",
+            "description": "is het model, algoritme of AI direct gekoppeld aan een basisregistratie",
+            "required": false
+        },
+        "source_data": {
+            "name": "Brondata",
+            "category": "TOEPASSING",
+            "type": "string",
+            "description": "overzicht van de databronnen die gebruikt worden door of bij het maken of trainen van het model, algoritme of AI",
+            "required": false
+        },
+        "methods_and_models": {
+            "name": "Methoden en modellen",
+            "category": "TOEPASSING",
+            "type": "string",
+            "description": "standaard methoden of modellen die het algoritme gebruikt",
+            "required": false
+        },
+        "monitoring": {
+            "name": "Monitoring",
+            "category": "TOEZICHT",
+            "type": "string",
+            "description": "overzicht van hoe  de inzet van het model, algoritme of AI wordt gemonitord",
+            "required": false
+        },
+        "human_intervention": {
+            "name": "Menselijke tussenkomst",
+            "category": "TOEZICHT",
+            "type": "string",
+            "description": "omschrijving van hoe uitkomsten van het model, algoritme of AI door een mens gecontroleerd en bijgesteld (kunnen) worden",
+            "required": true
+        },
+        "risks": {
+            "name": "Risico's",
+            "category": "TOEZICHT",
+            "type": "string",
+            "description": "overzicht van de voorziene risico's",
+            "required": false
+        },
+        "performance_standard": {
+            "name": "Prestatienormen",
+            "category": "TOEZICHT",
+            "type": "string",
+            "description": "omschrijving van de verwachte prestaties van het model, algoritme of AI  en hoe die worden gemeten",
+            "required": false
+        },
+        "competent_authority": {
+            "name": "Bevoegde autoriteit",
+            "category": "JURIDISCH",
+            "type": "string",
+            "description": "volledige naam van de bevoegde autoriteit verantwoordelijk voor de inzet van het model, algoritme of AI",
+            "required": false
+        },
+        "lawful_basis": {
+            "name": "Wettelijke grondslag",
+            "category": "JURIDISCH",
+            "type": "string",
+            "description": "omschrijving van de wettelijke grondslag voor de inzet van het model, algoritme of AI, of URL van het formele besluit",
+            "required": true
+        },
+        "DPIA": {
+            "name": "Data protection impact assessment",
+            "category": "JURIDISCH",
+            "type": "boolean",
+            "description": "is er een data protection impact assessment (DPIA) uitgevoerd",
+            "required": false
+        },
+        "DPIA_description": {
+            "name": "Omschrijving van de DPIA",
+            "category": "JURIDISCH",
+            "type": "string",
+            "description": "overzicht van de belangrijkste zaken die uit de data protection impact assessment (DPIA) naar voren kwamen",
+            "required": false
+        },
+        "objection_procedure": {
+            "name": "Bezwaarprocedure",
+            "category": "JURIDISCH",
+            "type": "string",
+            "description": "omschrijving van hoe burgers en bedrijven bezwaar kunnen maken tegen de uitkomsten van het model, algoritme of AI",
+            "required": true
+        },
+        "schema": {
+            "name": "Schema",
+            "category": "METADATA",
+            "type": "string",
+            "description": "schema gebruikt voor deze registratie in machine leesbaar format",
+            "required": false
+        },
+        "id": {
+            "name": "UUID",
+            "category": "METADATA",
+            "type": "string",
+            "description": "unieke identificatie (uuid) voor deze registratie",
+            "required": false
+        },
+        "url": {
+            "name": "URL van de bronregistratie",
+            "category": "METADATA",
+            "type": "string",
+            "description": "URL van deze registratie of van het algoritmeregister waarin deze registratie is vastgelegd in machine leesbaar format",
+            "required": false
+        },
+        "contact_email": {
+            "name": "E-mailadres van de contactpersoon",
+            "category": "METADATA",
+            "type": "string",
+            "description": "e-mailadres van de organisatie of de contactpersoon voor deze registratie",
+            "required": true
+        },
+        "area": {
+            "name": "Geografisch gebied",
+            "category": "METADATA",
+            "type": "string",
+            "description": "geografische gebied waarin het model, algoritme of AI wordt ingezet",
+            "required": false
+        },
+        "lang": {
+            "name": "Taal",
+            "category": "METADATA",
+            "type": "string",
+            "description": "taal waarin deze registratie is ingevoerd",
+            "required": false
+        },
+        "revision_date": {
+            "name": "Herzieningsdatum",
+            "category": "METADATA",
+            "type": "string",
+            "description": "datum waarvoor deze registratie moet worden herzien",
+            "required": false
+        }
     }
 }
